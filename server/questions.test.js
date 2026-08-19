@@ -2,8 +2,8 @@ const test = require('node:test');
 const assert = require('node:assert');
 const questions = require('./questions.json');
 
-test('150 questions, 6 answers each, points sum 100 non-increasing, unique texts', () => {
-  assert.equal(questions.length, 150);
+test('150+ questions, 6 answers each, points sum 100 non-increasing, unique texts', () => {
+  assert.ok(questions.length >= 150, `only ${questions.length} questions`);
   const seen = new Set();
   for (const q of questions) {
     assert.ok(typeof q.text === 'string' && q.text.length > 8, q.text);

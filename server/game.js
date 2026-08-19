@@ -1,7 +1,32 @@
 const ROUNDS = 3;
 
 const normalize = (s) =>
-  String(s).toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim();
+  String(s).toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim()
+    .replace(/^(a|an|the|my|to) /, '');
+
+// classic Levenshtein distance (strings here are short, full DP is fine)
+function levenshtein(a, b) {
+  const m = a.length, n = b.length;
+  let prev = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    const cur = [i];
+    for (let j = 1; j <= n; j++) {
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    }
+    prev = cur;
+  }
+  return prev[n];
+}
+
+const singular = (s) => (s.length > 3 && s.endsWith('s') ? s.slice(0, -1) : s);
+
+// forgiving comparison: exact, singular/plural, then length-scaled typo distance
+function fuzzyEq(c, g) {
+  if (c === g || singular(c) === singular(g)) return true;
+  const minLen = Math.min(c.length, g.length);
+  const maxDist = minLen >= 7 ? 2 : minLen >= 4 ? 1 : 0;
+  return maxDist > 0 && levenshtein(c, g) <= maxDist;
+}
 
 // true iff Levenshtein distance <= 1
 function within1(a, b) {
@@ -42,9 +67,7 @@ function submitGuess(match, playerIdx, text) {
   for (let slot = 0; slot < q.answers.length; slot++) {
     const a = q.answers[slot];
     const cands = [a.text, ...(a.aliases || [])].map(normalize);
-    const hit = cands.some(
-      (c) => c === g || (c.length >= 5 && g.length >= 5 && within1(c, g))
-    );
+    const hit = cands.some((c) => fuzzyEq(c, g));
     if (!hit) continue;
     if (match.board.claimed[slot] !== null) return { result: 'taken', slot };
     match.board.claimed[slot] = playerIdx;

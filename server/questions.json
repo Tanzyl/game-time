@@ -7533,5 +7533,2910 @@
     "points": 9
    }
   ]
+ },
+ {
+  "text": "Name a food",
+  "answers": [
+   {
+    "text": "Pizza",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Burger",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Fries",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Chicken",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Pasta",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Ice Cream",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name an animal",
+  "answers": [
+   {
+    "text": "Dog",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Cat",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Horse",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Cow",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Pig",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Chicken",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a place",
+  "answers": [
+   {
+    "text": "Paris",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "London",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "New York",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Tokyo",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Rome",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Dubai",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you place for a trip",
+  "answers": [
+   {
+    "text": "Pack",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Book",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Wear",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Buy",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Plan",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Bring",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you place at an airport",
+  "answers": [
+   {
+    "text": "Check In",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Show Your Passport",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Wait",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Eat",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Shop",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Board",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a place you might take",
+  "answers": [
+   {
+    "text": "Flight",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Train",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Bus",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Taxi",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Cruise",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Road Trip",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you see in a place",
+  "answers": [
+   {
+    "text": "Hotel",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Airport",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Train Station",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Museum",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Beach",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Tourist Attraction",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you find in a household item",
+  "answers": [
+   {
+    "text": "Kitchen",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Bedroom",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Bathroom",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Living Room",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Garage",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Office",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you household item at home",
+  "answers": [
+   {
+    "text": "Watch Tv",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Sleep",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Cook",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Eat",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Clean",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Relax",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a household item appliance",
+  "answers": [
+   {
+    "text": "Refrigerator",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Microwave",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Oven",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Toaster",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Dishwasher",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Washing Machine",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something soft in a household item",
+  "answers": [
+   {
+    "text": "Bed",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Pillow",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Blanket",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Carpet",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Couch",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Towel",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you clean in a household item",
+  "answers": [
+   {
+    "text": "Floor",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Window",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Bathroom",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Kitchen",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Carpet",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Mirror",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you keep in a household item",
+  "answers": [
+   {
+    "text": "Drawer",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Closet",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Cabinet",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Garage",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Fridge",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Desk",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a school subject",
+  "answers": [
+   {
+    "text": "Math",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Science",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "English",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "History",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Art",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Geography",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something students school subject",
+  "answers": [
+   {
+    "text": "Study",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Read",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Write",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Test",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Learn",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Memorize",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something in a school subject",
+  "answers": [
+   {
+    "text": "Classroom",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "School",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Backpack",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Pencil Case",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Library",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Cafeteria",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a school subject students use",
+  "answers": [
+   {
+    "text": "Pencil",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Pen",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Notebook",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Calculator",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Laptop",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Ruler",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a reason a student might school subject",
+  "answers": [
+   {
+    "text": "Be Late",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Miss Class",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Study",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Fail",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Celebrate",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Ask For Help",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a sport",
+  "answers": [
+   {
+    "text": "Football",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Basketball",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Soccer",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Baseball",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Tennis",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Hockey",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a sport played with a sport",
+  "answers": [
+   {
+    "text": "Ball",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Bat",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Racket",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Helmet",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Net",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Board",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something athletes sport",
+  "answers": [
+   {
+    "text": "Run",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Train",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Stretch",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Practice",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Compete",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Score",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you see at a sport",
+  "answers": [
+   {
+    "text": "Stadium",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Game",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Race",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Marathon",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Soccer Match",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Basketball Game",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a piece of sport equipment",
+  "answers": [
+   {
+    "text": "Helmet",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Ball",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Bat",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Gloves",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Racket",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Cleats",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a form of entertainment",
+  "answers": [
+   {
+    "text": "Superhero",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Movie",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Tv Show",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Video Game",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Cartoon",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Comic",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a famous form of entertainment",
+  "answers": [
+   {
+    "text": "Actor",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Singer",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Rapper",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Comedian",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Director",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Athlete",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a form of entertainment character",
+  "answers": [
+   {
+    "text": "Harry Potter",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Batman",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Spider-man",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Superman",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Homer Simpson",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Mickey Mouse",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you watch on a form of entertainment",
+  "answers": [
+   {
+    "text": "Tv",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Streaming Service",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Phone",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Computer",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Movie Screen",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Tablet",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a form of entertainment people play",
+  "answers": [
+   {
+    "text": "Minecraft",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Fortnite",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Mario",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Fifa",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Roblox",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Call Of Duty",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a form of entertainment music genre",
+  "answers": [
+   {
+    "text": "Pop",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Rock",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Rap",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Country",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Jazz",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Classical",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a technology device",
+  "answers": [
+   {
+    "text": "Smartphone",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Laptop",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Tablet",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Smartwatch",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Desktop Computer",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Game Console",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name an app people technology device",
+  "answers": [
+   {
+    "text": "Text",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Chat",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Watch Videos",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Listen To Music",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Shop",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Navigate",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you use with a technology device",
+  "answers": [
+   {
+    "text": "Keyboard",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Mouse",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Charger",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Headphones",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Monitor",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Webcam",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a technology device company",
+  "answers": [
+   {
+    "text": "Apple",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Google",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Microsoft",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Amazon",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Samsung",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Meta",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you do on a technology device",
+  "answers": [
+   {
+    "text": "Search",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Email",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Watch Videos",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Shop",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Play Games",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Work",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a technology device accessory",
+  "answers": [
+   {
+    "text": "Charger",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Case",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Headphones",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Mouse",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Keyboard",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Stylus",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a job",
+  "answers": [
+   {
+    "text": "Doctor",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Teacher",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Engineer",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Lawyer",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Nurse",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Accountant",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you find in an job",
+  "answers": [
+   {
+    "text": "Office",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Meeting",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Email",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Computer",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Desk",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Conference Room",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people do at job",
+  "answers": [
+   {
+    "text": "Work",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Meetings",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Email",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Lunch",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Presentations",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Training",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you bring to job",
+  "answers": [
+   {
+    "text": "Laptop",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Notebook",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Coffee",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Phone",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Id",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Lunch",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a reason someone might miss job",
+  "answers": [
+   {
+    "text": "Traffic",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Illness",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Vacation",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Appointment",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Family Emergency",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Oversleeping",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a clothing item",
+  "answers": [
+   {
+    "text": "Shirt",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Jeans",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Dress",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Jacket",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Sweater",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Shorts",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you wear on your clothing item",
+  "answers": [
+   {
+    "text": "Head",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Feet",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Hands",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Face",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Waist",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Neck",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a clothing item accessory",
+  "answers": [
+   {
+    "text": "Watch",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Hat",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Belt",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Scarf",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Sunglasses",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Bag",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people wear to a clothing item",
+  "answers": [
+   {
+    "text": "Wedding",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Party",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Interview",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Beach",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Gym",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Funeral",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a natural feature",
+  "answers": [
+   {
+    "text": "Tree",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Flower",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Mountain",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "River",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Lake",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Waterfall",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you see in a natural feature",
+  "answers": [
+   {
+    "text": "Forest",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Desert",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Ocean",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Garden",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Park",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Mountain",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a type of natural feature",
+  "answers": [
+   {
+    "text": "Weather",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Storm",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Cloud",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Flower",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Tree",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Rock",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something found in the natural feature",
+  "answers": [
+   {
+    "text": "Ocean",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Forest",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Desert",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Jungle",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "River",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Garden",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a holiday",
+  "answers": [
+   {
+    "text": "Christmas",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Halloween",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Thanksgiving",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Easter",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "New Year's",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Valentine's Day",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people holiday on a holiday",
+  "answers": [
+   {
+    "text": "Eat",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Decorate",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Travel",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Gift",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Watch",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Celebrate",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you never leave daily activity without",
+  "answers": [
+   {
+    "text": "Phone",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Wallet",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Keys",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Shoes",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Watch",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Id",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people do before daily activity",
+  "answers": [
+   {
+    "text": "Bed",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Work",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "School",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Dinner",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "A Trip",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "A Party",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people do when they are daily activity",
+  "answers": [
+   {
+    "text": "Bored",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Tired",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Hungry",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Happy",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Angry",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Stressed",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you can daily activity",
+  "answers": [
+   {
+    "text": "Buy",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Borrow",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Break",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Lose",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Forget",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Share",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something families do family",
+  "answers": [
+   {
+    "text": "Together",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "On Weekends",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "At Home",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "On Vacation",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "For Fun",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "At Dinner",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something a family might give you",
+  "answers": [
+   {
+    "text": "Parent",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Friend",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Sibling",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Grandparent",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Spouse",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Child",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a family activity",
+  "answers": [
+   {
+    "text": "Family",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Weekend",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Birthday",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Holiday",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Summer",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Outdoor",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people buy at a store",
+  "answers": [
+   {
+    "text": "Supermarket",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Mall",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Pharmacy",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Hardware Store",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Department Store",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Convenience Store",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people shop for store",
+  "answers": [
+   {
+    "text": "Online",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "At A Mall",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "For Groceries",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "For Clothes",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "For Gifts",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "During Sales",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something that often goes on store",
+  "answers": [
+   {
+    "text": "Sale",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Clearance",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Backorder",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "A Shopping List",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "A Receipt",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "A Credit Card",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you see at a event",
+  "answers": [
+   {
+    "text": "Party",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Birthday",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Wedding",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Concert",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Barbecue",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Picnic",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a event food",
+  "answers": [
+   {
+    "text": "Party",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Birthday",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Picnic",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Barbecue",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Wedding",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Game Night",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a vehicle",
+  "answers": [
+   {
+    "text": "Car",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Truck",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Bus",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Train",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Airplane",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Motorcycle",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you find in a vehicle",
+  "answers": [
+   {
+    "text": "Car",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Bus",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Train",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Airplane",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Garage",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Parking Lot",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people do while vehicle",
+  "answers": [
+   {
+    "text": "Driving",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Flying",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Riding A Bus",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Waiting For A Train",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Commuting",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "On A Road Trip",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name an exercise people exercise",
+  "answers": [
+   {
+    "text": "Run",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Walk",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Lift Weights",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Swim",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Cycle",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Stretch",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something found at a exercise",
+  "answers": [
+   {
+    "text": "Gym",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Doctor's Office",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Hospital",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Pharmacy",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Fitness Center",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Pool",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people do to stay exercise",
+  "answers": [
+   {
+    "text": "Healthy",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Fit",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Strong",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Active",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Relaxed",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Hydrated",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people use money on",
+  "answers": [
+   {
+    "text": "Spend",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Save",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Borrow",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Invest",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Waste",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Earn",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people pay use",
+  "answers": [
+   {
+    "text": "Rent",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Bills",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Taxes",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Groceries",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Gas",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Insurance",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a way to use money",
+  "answers": [
+   {
+    "text": "Save",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Earn",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Invest",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Spend",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Borrow",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Donate",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a way people communication method",
+  "answers": [
+   {
+    "text": "Communicate",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Call",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Text",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Message",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Email",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Video Chat",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something people send in a communication method",
+  "answers": [
+   {
+    "text": "Text",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Email",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Letter",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Package",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Message",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Post",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you might say when communication method",
+  "answers": [
+   {
+    "text": "Answering The Phone",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Meeting Someone",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Leaving",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Apologizing",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Celebrating",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Saying Goodbye",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a game game",
+  "answers": [
+   {
+    "text": "Board",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Card",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Party",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Video",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Mobile",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Word",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something used in a game",
+  "answers": [
+   {
+    "text": "Board Game",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Card Game",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Video Game",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Party Game",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Arcade Game",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Puzzle",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a game game people play with friends",
+  "answers": [
+   {
+    "text": "Card",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Board",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Party",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Video",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Word",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Sports",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a color",
+  "answers": [
+   {
+    "text": "Red",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Blue",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Green",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Yellow",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Purple",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Orange",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something commonly color",
+  "answers": [
+   {
+    "text": "Red",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Blue",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Green",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Yellow",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Black",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "White",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a place people go to place",
+  "answers": [
+   {
+    "text": "Eat",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Shop",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Relax",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Exercise",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Study",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Have Fun",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name a place you might see a place",
+  "answers": [
+   {
+    "text": "Doctor",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Teacher",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Police Officer",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Chef",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Athlete",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Pilot",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something that comes in object",
+  "answers": [
+   {
+    "text": "Pairs",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Boxes",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Bottles",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Cans",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Bags",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Packs",
+    "aliases": [],
+    "points": 5
+   }
+  ]
+ },
+ {
+  "text": "Name something you can object",
+  "answers": [
+   {
+    "text": "Open",
+    "aliases": [],
+    "points": 38
+   },
+   {
+    "text": "Close",
+    "aliases": [],
+    "points": 24
+   },
+   {
+    "text": "Break",
+    "aliases": [],
+    "points": 16
+   },
+   {
+    "text": "Throw",
+    "aliases": [],
+    "points": 10
+   },
+   {
+    "text": "Carry",
+    "aliases": [],
+    "points": 7
+   },
+   {
+    "text": "Fold",
+    "aliases": [],
+    "points": 5
+   }
+  ]
  }
 ]

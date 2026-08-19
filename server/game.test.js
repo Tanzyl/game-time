@@ -24,14 +24,24 @@ const QS = [
   ]),
 ];
 
-test('normalize lowercases, strips punctuation, collapses whitespace', () => {
+test('normalize lowercases, strips punctuation, collapses whitespace, drops leading articles', () => {
   assert.equal(normalize('  Check   PHONE!! '), 'check phone');
+  assert.equal(normalize('The Beach'), 'beach');
+  assert.equal(normalize('a dog'), 'dog');
 });
 
 test('within1 allows one edit only', () => {
   assert.ok(within1('coffee', 'cofee'));   // deletion
   assert.ok(within1('coffee', 'coffey'));  // substitution
   assert.ok(!within1('coffee', 'tea'));
+});
+
+test('plural/singular and bigger typos are forgiven', () => {
+  const m = createMatch(QS);
+  startRound(m);
+  assert.equal(submitGuess(m, 0, 'showers').result, 'claimed');      // plural of Shower
+  assert.equal(submitGuess(m, 1, 'brsh teet').result, 'claimed');    // 2 edits, long phrase
+  assert.equal(submitGuess(m, 0, 'the coffee').result, 'claimed');   // leading article
 });
 
 test('exact match claims answer and scores points x multiplier', () => {
