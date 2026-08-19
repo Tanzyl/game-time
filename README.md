@@ -40,19 +40,20 @@ Both devices must reach the server. On the same Wi-Fi:
    Firewall (Windows prompts the first time, or: Settings → Firewall →
    Allow an app), and make sure the network is set to "Private".
 
-To play over the internet (different networks), expose the port with a
-tunnel. The most reliable no-signup option (uses the SSH client built
-into Windows):
+To play over the internet (different networks):
 
 ```bash
-node server/index.js                                 # terminal 1
-ssh -R 80:localhost:4560 nokey@localhost.run         # terminal 2
+node server/index.js     # terminal 1 — the game
+npm run tunnel           # terminal 2 — auto-reconnecting public tunnel
 ```
 
-It prints an `https://xxxx.lhr.life` URL — open that on both devices and
-play. The URL changes each run. (`npm run tunnel` / localtunnel and
-cloudflared quick tunnels also work in principle but proved unreliable
-on some networks — localhost.run is the one verified working here.)
+The tunnel prints a stable URL (default `https://gametime-play.loca.lt`;
+set `TUNNEL_NAME` to pick another name) and reclaims the same URL after
+drops. First-time visitors see a one-time "tunnel password" page — the
+password is your public IP (shown at https://api.ipify.org).
+
+Free tunnels are for testing; for regular play deploy to a free host
+(Render/Railway) for a permanent URL with no tunnel or password page.
 
 ## Run (development)
 

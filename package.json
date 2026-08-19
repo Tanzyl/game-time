@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev:server": "node server/index.js",
-    "tunnel": "lt --port 4560",
+    "tunnel": "node server/tunnel.js",
     "build": "cd client && npm run build",
     "test": "node --test"
   },
