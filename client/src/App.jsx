@@ -1,122 +1,76 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useEffect, useState, useCallback } from 'react';
+import { socket } from './socket';
+import Home from './screens/Home';
+import Lobby from './screens/Lobby';
+import Game from './screens/Game';
 
-function App() {
-  const [count, setCount] = useState(0)
+const stored = () => { try { return JSON.parse(localStorage.getItem('gt_session')) || null; } catch { return null; } };
 
-  return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+export default function App() {
+  const [screen, setScreen] = useState('home'); // home | lobby | game
+  const [session, setSession] = useState(null); // {code, token, playerIdx}
+  const [roomInfo, setRoomInfo] = useState(null); // room_state payload
+  const [gameState, setGameState] = useState(null); // accumulated round/game payload
+  const [error, setError] = useState('');
 
-      <div className="ticks"></div>
+  const join = useCallback((code, token) => {
+    socket.emit('join_room', { code, token }, (res) => {
+      if (!res.ok) { setError(res.error); localStorage.removeItem('gt_session'); return; }
+      const s = { code: res.code, token: res.token, playerIdx: res.playerIdx };
+      localStorage.setItem('gt_session', JSON.stringify(s));
+      setSession(s); setScreen('lobby'); setError('');
+    });
+  }, []);
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+  const create = useCallback(() => {
+    socket.emit('create_room', (res) => {
+      const s = { code: res.code, token: res.token, playerIdx: res.playerIdx };
+      localStorage.setItem('gt_session', JSON.stringify(s));
+      setSession(s); setScreen('lobby');
+    });
+  }, []);
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+  useEffect(() => {
+    const onRoomState = (rs) => setRoomInfo(rs);
+    const onRoundStart = (p) => { setScreen('game'); setGameState({ phase: 'playing', ...p, revealed: p.revealed || [], feedback: null, roundEnd: null, matchEnd: null }); };
+    const onRevealed = (p) => setGameState((g) => g && { ...g, scores: p.scores, revealed: [...g.revealed, p] });
+    const onFeedback = (p) => setGameState((g) => g && { ...g, feedback: { ...p, at: Date.now() } });
+    const onRoundEnd = (p) => setGameState((g) => g && { ...g, phase: 'round_end', scores: p.scores, roundEnd: p });
+    const onMatchEnd = (p) => { setScreen('game'); setGameState((g) => ({ ...(g || {}), phase: 'match_end', scores: p.scores, matchEnd: p })); };
+    const onOppDisc = () => setGameState((g) => g && { ...g, oppDisconnected: true });
+    const onOppRecon = () => setGameState((g) => g && { ...g, oppDisconnected: false });
+    socket.on('room_state', onRoomState);
+    socket.on('round_start', onRoundStart);
+    socket.on('answer_revealed', onRevealed);
+    socket.on('guess_feedback', onFeedback);
+    socket.on('round_end', onRoundEnd);
+    socket.on('match_end', onMatchEnd);
+    socket.on('opponent_disconnected', onOppDisc);
+    socket.on('opponent_reconnected', onOppRecon);
+    return () => {
+      socket.off('room_state', onRoomState); socket.off('round_start', onRoundStart);
+      socket.off('answer_revealed', onRevealed); socket.off('guess_feedback', onFeedback);
+      socket.off('round_end', onRoundEnd); socket.off('match_end', onMatchEnd);
+      socket.off('opponent_disconnected', onOppDisc); socket.off('opponent_reconnected', onOppRecon);
+    };
+  }, []);
+
+  // Auto-join: /room/CODE in URL, or stored session (reconnect)
+  useEffect(() => {
+    const m = window.location.pathname.match(/^\/room\/([A-Za-z2-9]{6})$/);
+    const s = stored();
+    if (m) join(m[1].toUpperCase(), s && s.code === m[1].toUpperCase() ? s.token : undefined);
+    else if (s) join(s.code, s.token);
+  }, [join]);
+
+  const leave = () => { localStorage.removeItem('gt_session'); window.location.href = '/'; };
+
+  if (screen === 'game' && gameState) {
+    return <Game session={session} game={gameState} onGuess={(text) => socket.emit('guess', { text })}
+      onRematch={() => socket.emit('rematch')} onLeave={leave} roomInfo={roomInfo} />;
+  }
+  if (screen === 'lobby' && session) {
+    return <Lobby session={session} roomInfo={roomInfo} onReady={() => socket.emit('ready')} onLeave={leave} />;
+  }
+  return <Home onCreate={create} onJoin={(code) => join(code)} error={error} />;
 }
-
-export default App
