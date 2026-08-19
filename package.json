@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev:server": "node server/index.js",
+    "tunnel": "lt --port 4560",
     "build": "cd client && npm run build",
     "test": "node --test"
   },
@@ -12,6 +13,7 @@
     "socket.io": "^4.7.0"
   },
   "devDependencies": {
+    "localtunnel": "^2.0.2",
     "socket.io-client": "^4.7.0"
   }
 }
