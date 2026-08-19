@@ -41,7 +41,18 @@ Both devices must reach the server. On the same Wi-Fi:
    Allow an app), and make sure the network is set to "Private".
 
 To play over the internet (different networks), expose the port with a
-tunnel, e.g. `npx localtunnel --port 4560` or ngrok, and share that URL.
+tunnel. The most reliable no-signup option (uses the SSH client built
+into Windows):
+
+```bash
+node server/index.js                                 # terminal 1
+ssh -R 80:localhost:4560 nokey@localhost.run         # terminal 2
+```
+
+It prints an `https://xxxx.lhr.life` URL — open that on both devices and
+play. The URL changes each run. (`npm run tunnel` / localtunnel and
+cloudflared quick tunnels also work in principle but proved unreliable
+on some networks — localhost.run is the one verified working here.)
 
 ## Run (development)
 
