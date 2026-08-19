@@ -34,9 +34,14 @@ function createServer() {
     return picked;
   };
 
+  const cleanName = (name, fallback) => {
+    const n = String(name || '').trim().slice(0, 20);
+    return n || fallback;
+  };
+
   const roomState = (room) => ({
     state: room.state,
-    players: room.players.map((p) => ({ connected: p.connected, ready: p.ready })),
+    players: room.players.map((p) => ({ name: p.name, connected: p.connected, ready: p.ready })),
   });
 
   const emitRoom = (room, ev, data) => {
@@ -75,8 +80,14 @@ function createServer() {
     const [a, b] = room.match.scores;
     const winner = forfeitWinner !== null ? forfeitWinner : a === b ? null : a > b ? 0 : 1;
     room.players.forEach((p) => (p.ready = false));
+    room.series.matches++;
+    room.series.points[0] += a;
+    room.series.points[1] += b;
+    if (winner !== null) room.series.wins[winner]++;
     emitRoom(room, 'match_end', {
       scores: room.match.scores, winner, forfeit: forfeitWinner !== null,
+      series: room.series,
+      names: room.players.map((p) => p.name),
     });
   }
 
@@ -90,7 +101,8 @@ function createServer() {
     let room = null;
     let playerIdx = -1;
 
-    socket.on('create_room', (ack) => {
+    socket.on('create_room', (payload, ack) => {
+      if (typeof payload === 'function') { ack = payload; payload = {}; }
       if (typeof ack !== 'function') return;
       let code;
       do { code = newCode(); } while (rooms.has(code));
@@ -98,7 +110,8 @@ function createServer() {
       room = {
         code, state: 'lobby', match: null, timer: null, revealed: [],
         used: new Set(), roundEndsAt: 0,
-        players: [{ token, socketId: socket.id, connected: true, ready: false, guessTimes: [], graceTimer: null }],
+        series: { wins: [0, 0], points: [0, 0], matches: 0 },
+        players: [{ token, socketId: socket.id, connected: true, ready: false, guessTimes: [], graceTimer: null, name: cleanName(payload && payload.name, 'Player 1') }],
       };
       rooms.set(code, room);
       playerIdx = 0;
@@ -106,7 +119,7 @@ function createServer() {
       emitRoom(room, 'room_state', roomState(room));
     });
 
-    socket.on('join_room', ({ code, token } = {}, ack) => {
+    socket.on('join_room', ({ code, token, name } = {}, ack) => {
       if (typeof ack !== 'function') return;
       const r = rooms.get(String(code || '').toUpperCase());
       if (!r) return ack({ ok: false, error: 'Room not found' });
@@ -131,14 +144,17 @@ function createServer() {
           });
         } else if (r.state === 'over') {
           const [a, b] = r.match.scores;
-          socket.emit('match_end', { scores: r.match.scores, winner: a === b ? null : a > b ? 0 : 1, forfeit: false });
+          socket.emit('match_end', {
+            scores: r.match.scores, winner: a === b ? null : a > b ? 0 : 1, forfeit: false,
+            series: r.series, names: r.players.map((q) => q.name),
+          });
         }
         return;
       }
       if (r.players.length >= 2) return ack({ ok: false, error: 'Room is full' });
       if (r.state !== 'lobby') return ack({ ok: false, error: 'Game already in progress' });
       const newToken = crypto.randomBytes(16).toString('hex');
-      r.players.push({ token: newToken, socketId: socket.id, connected: true, ready: false, guessTimes: [], graceTimer: null });
+      r.players.push({ token: newToken, socketId: socket.id, connected: true, ready: false, guessTimes: [], graceTimer: null, name: cleanName(name, 'Player 2') });
       room = r; playerIdx = 1;
       ack({ ok: true, code: r.code, token: newToken, playerIdx: 1 });
       emitRoom(r, 'room_state', roomState(r));

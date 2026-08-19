@@ -19,8 +19,8 @@ async function main() {
   const c1 = Client(url, { transports: ['websocket', 'polling'] });
   const c2 = Client(url, { transports: ['websocket', 'polling'] });
 
-  const created = await c1.emitWithAck('create_room');
-  const joined = await c2.emitWithAck('join_room', { code: created.code });
+  const created = await c1.emitWithAck('create_room', { name: 'Bot Alice' });
+  const joined = await c2.emitWithAck('join_room', { code: created.code, name: 'Bot Bob' });
   assert.equal(joined.ok, true);
 
   let rounds = 0;
@@ -49,6 +49,9 @@ async function main() {
   assert.equal(rounds, 3, 'played 3 rounds');
   assert.ok(Number.isInteger(end.scores[0]) && Number.isInteger(end.scores[1]));
   assert.ok([0, 1, null].includes(end.winner));
+  assert.deepEqual(end.names, ['Bot Alice', 'Bot Bob']);
+  assert.equal(end.series.matches, 1);
+  assert.equal(end.series.points[0] + end.series.points[1], end.scores[0] + end.scores[1]);
   console.log('match_end:', JSON.stringify(end));
   console.log('SMOKE PASS');
   c1.close(); c2.close();

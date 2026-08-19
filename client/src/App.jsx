@@ -1,10 +1,10 @@
-import { useEffect, useState, useCallback } from 'react';
+﻿import { useEffect, useState, useCallback } from 'react';
 import { socket } from './socket';
 import Home from './screens/Home';
 import Lobby from './screens/Lobby';
 import Game from './screens/Game';
 
-const stored = () => { try { return JSON.parse(localStorage.getItem('gt_session')) || null; } catch { return null; } };
+const stored = () => { try { return JSON.parse(sessionStorage.getItem('gt_session')) || null; } catch { return null; } };
 
 export default function App() {
   const [screen, setScreen] = useState('home'); // home | lobby | game
@@ -14,18 +14,20 @@ export default function App() {
   const [error, setError] = useState('');
 
   const join = useCallback((code, token) => {
-    socket.emit('join_room', { code, token }, (res) => {
-      if (!res.ok) { setError(res.error); localStorage.removeItem('gt_session'); return; }
+    const name = localStorage.getItem('gt_name') || '';
+    socket.emit('join_room', { code, token, name }, (res) => {
+      if (!res.ok) { setError(res.error); sessionStorage.removeItem('gt_session'); return; }
       const s = { code: res.code, token: res.token, playerIdx: res.playerIdx };
-      localStorage.setItem('gt_session', JSON.stringify(s));
+      sessionStorage.setItem('gt_session', JSON.stringify(s));
       setSession(s); setScreen('lobby'); setError('');
     });
   }, []);
 
   const create = useCallback(() => {
-    socket.emit('create_room', (res) => {
+    const name = localStorage.getItem('gt_name') || '';
+    socket.emit('create_room', { name }, (res) => {
       const s = { code: res.code, token: res.token, playerIdx: res.playerIdx };
-      localStorage.setItem('gt_session', JSON.stringify(s));
+      sessionStorage.setItem('gt_session', JSON.stringify(s));
       setSession(s); setScreen('lobby');
     });
   }, []);
@@ -63,7 +65,7 @@ export default function App() {
     else if (s) join(s.code, s.token);
   }, [join]);
 
-  const leave = () => { localStorage.removeItem('gt_session'); window.location.href = '/'; };
+  const leave = () => { sessionStorage.removeItem('gt_session'); window.location.href = '/'; };
 
   if (screen === 'game' && gameState) {
     return <Game session={session} game={gameState} onGuess={(text) => socket.emit('guess', { text })}
