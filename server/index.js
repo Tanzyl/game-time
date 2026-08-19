@@ -212,7 +212,18 @@ function createServer() {
 module.exports = { createServer };
 
 if (require.main === module) {
+  const os = require('os');
   const { server } = createServer();
-  const port = process.env.PORT || 3000;
-  server.listen(port, () => console.log(`Game-Time listening on http://localhost:${port}`));
+  const port = process.env.PORT || 4560;
+  server.listen(port, () => {
+    console.log(`Game-Time listening on:`);
+    console.log(`  Local:   http://localhost:${port}`);
+    for (const ifaces of Object.values(os.networkInterfaces())) {
+      for (const i of ifaces) {
+        if (i.family === 'IPv4' && !i.internal) {
+          console.log(`  Network: http://${i.address}:${port}  <- open this on other devices (same Wi-Fi)`);
+        }
+      }
+    }
+  });
 }

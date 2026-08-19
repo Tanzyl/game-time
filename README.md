@@ -26,16 +26,30 @@ cd client && npm install && cd ..
 
 ```bash
 npm run build
-node server/index.js     # http://localhost:3000  (PORT env to override)
+node server/index.js     # http://localhost:4560  (PORT env to override)
 ```
+
+## Playing from two devices
+
+Both devices must reach the server. On the same Wi-Fi:
+
+1. Start the server — it prints a `Network: http://192.168.x.x:4560` URL.
+2. Open that **Network** URL on BOTH devices (not `localhost`), create the
+   room on one, and share the link with the other.
+3. If the other device can't connect, allow Node.js through Windows
+   Firewall (Windows prompts the first time, or: Settings → Firewall →
+   Allow an app), and make sure the network is set to "Private".
+
+To play over the internet (different networks), expose the port with a
+tunnel, e.g. `npx localtunnel --port 4560` or ngrok, and share that URL.
 
 ## Run (development)
 
 Two terminals:
 
 ```bash
-npm run dev:server       # API/socket server on :3000
-cd client && npm run dev # Vite dev server on :5173, proxies socket.io to :3000
+npm run dev:server       # API/socket server on :4560
+cd client && npm run dev # Vite dev server on :5173, proxies socket.io to :4560
 ```
 
 ## Tests
