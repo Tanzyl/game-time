@@ -1,0 +1,17 @@
+{
+  "name": "game-time",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev:server": "node server/index.js",
+    "build": "cd client && npm run build",
+    "test": "node --test server/"
+  },
+  "dependencies": {
+    "express": "^4.19.0",
+    "socket.io": "^4.7.0"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.7.0"
+  }
+}
