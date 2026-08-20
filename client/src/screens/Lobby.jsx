@@ -1,27 +1,47 @@
+import { useState } from 'react';
+import Doodles from '../Doodles';
+
 export default function Lobby({ session, roomInfo, onReady, onLeave }) {
   const url = `${window.location.origin}/room/${session.code}`;
   const me = roomInfo?.players?.[session.playerIdx];
-  const bothHere = (roomInfo?.players?.length || 0) === 2;
+  const players = roomInfo?.players || [];
+  const bothHere = players.length === 2;
+  const [copied, setCopied] = useState(false);
+  const invite = () => {
+    navigator.clipboard.writeText(url);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  };
   return (
     <div className="screen lobby">
-      <h2>🎪 Room {session.code}</h2>
-      <p>Share this link with your opponent:</p>
+      <Doodles />
+      <button className="back" onClick={onLeave} aria-label="Leave room">←</button>
+      <h1 className="title">Lobby</h1>
+      <p className="sub">Invite your friend!</p>
       <div className="share-row">
         <code>{url}</code>
-        <button onClick={() => navigator.clipboard.writeText(url)}>📋 Copy</button>
+        <button className="accent" onClick={invite}>{copied ? '✔ Copied!' : '👥 Invite'}</button>
       </div>
-      <ul className="players">
-        {(roomInfo?.players || []).map((p, i) => (
-          <li key={i} className={`p${i}`}>
-            {i === 0 ? '🔵' : '🟠'} {p.name}{i === session.playerIdx ? ' (you)' : ''} — {p.ready ? '✅ Ready' : p.connected ? '⏳ Waiting' : '📴 Disconnected'}
-          </li>
-        ))}
-        {!bothHere && <li className="empty">Waiting for opponent to join…</li>}
-      </ul>
-      <button className="primary" disabled={!bothHere || me?.ready} onClick={onReady}>
-        {me?.ready ? 'Waiting for opponent…' : "Let's go! 🚀"}
+      <div className="panel">
+        <p className="label">Players {players.length}/2</p>
+        <ul className="players">
+          {players.map((p, i) => (
+            <li key={i} className="player-row">
+              <span className={`avatar p${i}-bg`}>{(p.name || '?')[0].toUpperCase()}</span>
+              <span className="pname">{i === 0 && <span className="crown-sm">👑</span>}{p.name}{i === session.playerIdx ? ' (you)' : ''}</span>
+              <span className={`status ${p.ready ? 'ready' : ''}`}>
+                {p.ready ? <>Ready <i className="check on">✔</i></>
+                  : p.connected ? <>Waiting… <i className="check" /></>
+                  : <>Offline <i className="check" /></>}
+              </span>
+            </li>
+          ))}
+          {!bothHere && <li className="player-row empty">Waiting for a friend to join…</li>}
+        </ul>
+      </div>
+      <button className="success big" disabled={!bothHere || me?.ready} onClick={onReady}>
+        {me?.ready ? 'Waiting for opponent…' : 'Start game ▶'}
       </button>
-      <button className="link" onClick={onLeave}>Leave</button>
     </div>
   );
 }

@@ -12,6 +12,7 @@ npm run build                               # vite-builds client into client/dis
 node server/index.js                        # serve game on :4560 (PORT env overrides)
 node server/smoke.js                        # full 3-round match E2E against a local throwaway server
 node server/smoke.js https://guess-their-answer.onrender.com   # same, against production
+npm run tunnel                              # public URL via localtunnel (TUNNEL_NAME env sets subdomain) — testing only; real play uses Render
 ```
 
 Dev with hot reload: `npm run dev:server` plus `cd client && npm run dev` (Vite on :5173 proxies `/socket.io` to :4560).
@@ -43,3 +44,9 @@ Three layers, strictly separated:
 ## Question dataset
 
 `server/questions.json` — 233 questions, each exactly 6 answers, integer points summing to exactly 100, non-increasing order, unique question texts. `server/questions.test.js` enforces all of this; run it after any dataset edit. Answer `aliases` arrays are optional extra synonyms — spelling variants are unnecessary (fuzzy matching covers them), but genuinely different words belong there.
+
+Root-level `guess_their_answer_500_question_dataset.csv` is the raw source pool questions were imported from — edit `questions.json`, not the CSV.
+
+## Docs
+
+`docs/superpowers/` holds the original design spec (`specs/2026-08-19-guess-their-answer-design.md`) and implementation plan (`plans/2026-08-19-guess-their-answer.md`) — the plan's Interfaces block is the socket protocol reference.

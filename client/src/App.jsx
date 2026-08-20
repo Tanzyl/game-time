@@ -12,6 +12,7 @@ export default function App() {
   const [roomInfo, setRoomInfo] = useState(null); // room_state payload
   const [gameState, setGameState] = useState(null); // accumulated round/game payload
   const [error, setError] = useState('');
+  const [pendingCode, setPendingCode] = useState(null); // room link opened but no name yet
 
   const join = useCallback((code, token) => {
     const name = localStorage.getItem('gt_name') || '';
@@ -61,8 +62,12 @@ export default function App() {
   useEffect(() => {
     const m = window.location.pathname.match(/^\/room\/([A-Za-z2-9]{6})$/);
     const s = stored();
-    if (m) join(m[1].toUpperCase(), s && s.code === m[1].toUpperCase() ? s.token : undefined);
-    else if (s) join(s.code, s.token);
+    if (m) {
+      const code = m[1].toUpperCase();
+      if (s && s.code === code) join(code, s.token);
+      else if (localStorage.getItem('gt_name')) join(code);
+      else setPendingCode(code); // ask for a name before joining
+    } else if (s) join(s.code, s.token);
   }, [join]);
 
   const leave = () => { sessionStorage.removeItem('gt_session'); window.location.href = '/'; };
@@ -74,5 +79,5 @@ export default function App() {
   if (screen === 'lobby' && session) {
     return <Lobby session={session} roomInfo={roomInfo} onReady={() => socket.emit('ready')} onLeave={leave} />;
   }
-  return <Home onCreate={create} onJoin={(code) => join(code)} error={error} />;
+  return <Home onCreate={create} onJoin={(code) => join(code)} error={error} pendingCode={pendingCode} />;
 }

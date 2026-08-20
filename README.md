@@ -75,5 +75,5 @@ node server/smoke.js     # plays a full 3-round match end to end (~20s)
 
 - `server/game.js` — pure game rules (matching, scoring, rounds); no socket code
 - `server/index.js` — Express + Socket.IO rooms, timers, reconnect/forfeit
-- `server/questions.json` — 150 questions, 6 weighted answers each
+- `server/questions.json` — 233 questions, 6 weighted answers each
 - `client/` — React (Vite) app: Home, Lobby, Game screens

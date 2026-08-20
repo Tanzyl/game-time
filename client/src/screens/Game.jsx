@@ -1,4 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
+import Doodles from '../Doodles';
+
+const ROUND_SECS = 30; // mirrors server ROUND_MS
 
 function useCountdown(endsAt, active) {
   const [left, setLeft] = useState(0);
@@ -31,10 +34,10 @@ function SeriesBoard({ series, names, me }) {
     .map((i) => ({ i, name: names[i], points: series.points[i], wins: series.wins[i] }))
     .sort((a, b) => b.points - a.points);
   return (
-    <div className="series">
-      <h3>📊 Series standings · {series.matches} {series.matches === 1 ? 'game' : 'games'}</h3>
+    <div className="series panel">
+      <p className="label">Series standings · {series.matches} {series.matches === 1 ? 'game' : 'games'}</p>
       <table>
-        <thead><tr><th>#</th><th>Player</th><th>Wins</th><th>Total points</th></tr></thead>
+        <thead><tr><th>#</th><th>Player</th><th>Wins</th><th>Total</th></tr></thead>
         <tbody>
           {rows.map((r, pos) => (
             <tr key={r.i} className={`p${r.i} ${r.i === me ? 'me' : ''}`}>
@@ -72,34 +75,68 @@ export default function Game({ session, game, onGuess, onRematch, onLeave, roomI
 
   if (game.phase === 'match_end') {
     const { winner, forfeit, series, names } = game.matchEnd;
-    const verdict = winner === null ? "🤝 It's a draw!" : winner === me ? '🏆 You win!' : `😤 ${oppName} wins!`;
+    const verdict = winner === null ? "🤝 It's a draw!" : winner === me ? 'You win!' : `${oppName} wins!`;
+    const cards = [me, 1 - me].map((i) => ({
+      i,
+      name: i === me ? myName : oppName,
+      score: game.scores[i],
+      won: winner === i,
+    }));
     return (
       <div className="screen end">
+        <Doodles />
         {winner === me && <Confetti />}
-        <h2>{verdict}</h2>
+        <h1 className="title">Results</h1>
+        <span className="round-pill">{verdict}</span>
         {forfeit && <p className="warn">📴 {oppName} left the game.</p>}
-        <p className="final-score">
-          <span className={`p${me}`}>{myName}: {game.scores[me]}</span>
-          <span className="vs"> vs </span>
-          <span className={`p${1 - me}`}>{oppName}: {game.scores[1 - me]}</span>
-        </p>
+        <div className="podium">
+          {cards.map((c) => (
+            <div key={c.i} className={`pcard p${c.i} ${c.won ? 'winner' : ''}`}>
+              {c.won && <span className="pcrown">👑</span>}
+              <span className={`avatar lg p${c.i}-bg`}>{c.name[0].toUpperCase()}</span>
+              <b className="pname">{c.name}{c.i === me ? ' (you)' : ''}</b>
+              <span className="pts">{c.score}</span>
+            </div>
+          ))}
+        </div>
         <SeriesBoard series={series} names={names || [myName, oppName]} me={me} />
-        {!forfeit && <button className="primary" onClick={onRematch}>🔁 Rematch</button>}
-        <button className="link" onClick={onLeave}>Leave game</button>
+        <div className="end-actions">
+          <button onClick={onLeave}>🏠 Main menu</button>
+          {!forfeit && <button className="accent" onClick={onRematch}>Rematch ▶</button>}
+        </div>
       </div>
     );
   }
 
   return (
     <div className="screen game">
+      <Doodles />
       <header>
-        <span className={`score p${me}`}>{myName}<b>{game.scores?.[me] ?? 0}</b></span>
-        <span className="round">Round {game.round}/3<br /><em>×{game.multiplier} points</em></span>
-        <span className={`score p${1 - me}`}>{oppName}<b>{game.scores?.[1 - me] ?? 0}</b></span>
+        <span className={`badge score-badge p${me}`}><small>{myName}</small><b>{game.scores?.[me] ?? 0}</b></span>
+        <span className="badge round-badge"><small>Round</small><b>{game.round}<em> / 3</em></b><span className="mult">×{game.multiplier} points</span></span>
+        <span className={`badge score-badge p${1 - me}`}><small>{oppName}</small><b>{game.scores?.[1 - me] ?? 0}</b></span>
       </header>
       {game.oppDisconnected && <p className="warn">📴 {oppName} disconnected — waiting up to 15s…</p>}
-      <div className={`timer ${left <= 5 ? 'low' : ''}`}>{game.phase === 'playing' ? `⏱ ${left}s` : "⏰ Time's up!"}</div>
-      <h2 className="question">{game.questionText}</h2>
+      <div className="question-card">
+        <span className="quote">“</span>
+        <h2 className="question">{game.questionText}</h2>
+      </div>
+      <div className="timerbar">
+        <span className={`clock ${left <= 5 ? 'low' : ''}`}>⏱ {game.phase === 'playing' ? left : 0}</span>
+        <div className="track">
+          <div className={`fill ${left <= 5 ? 'low' : ''}`}
+            style={{ width: `${game.phase === 'playing' ? Math.min(100, (left / ROUND_SECS) * 100) : 0}%` }} />
+        </div>
+      </div>
+      {game.phase === 'playing' && (
+        <div className="guess-row">
+          <input ref={inputRef} autoFocus value={text} maxLength={60}
+            placeholder="Type your answer…" onChange={(e) => setText(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && submit()} />
+          <button className="accent go" onClick={submit} aria-label="Submit answer">➤</button>
+        </div>
+      )}
+      <p className="board-label">What do you think others answered?</p>
       <ol className="board">
         {slots.map((r, i) => {
           const missed = game.roundEnd?.unclaimed?.find((u) => u.slot === i);
@@ -112,14 +149,6 @@ export default function Game({ session, game, onGuess, onRematch, onLeave, roomI
           );
         })}
       </ol>
-      {game.phase === 'playing' && (
-        <div className="guess-row">
-          <input ref={inputRef} autoFocus value={text} maxLength={60}
-            placeholder="Type your answer…" onChange={(e) => setText(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && submit()} />
-          <button className="primary" onClick={submit}>Go!</button>
-        </div>
-      )}
       {fresh && <p className="feedback">{game.feedback.result === 'taken' ? '🙅 Already taken!' : '❌ Nope, try again!'}</p>}
       {game.phase === 'round_end' && <p className="intermission">🎬 Next round starting…</p>}
     </div>
