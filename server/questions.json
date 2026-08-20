@@ -81,7 +81,8 @@
    {
     "text": "Pancakes",
     "aliases": [
-     "pancake"
+     "pancake",
+     "hotcakes"
     ],
     "points": 13
    },
@@ -224,7 +225,8 @@
     "text": "Umbrella",
     "aliases": [
      "beach umbrella",
-     "parasol"
+     "parasol",
+     "brolly"
     ],
     "points": 17
    },
@@ -233,7 +235,8 @@
     "aliases": [
      "bathing suit",
      "swimming suit",
-     "bikini"
+     "bikini",
+     "swimming costume"
     ],
     "points": 13
    },
@@ -248,7 +251,8 @@
     "text": "Cooler",
     "aliases": [
      "ice box",
-     "cool box"
+     "cool box",
+     "icebox"
     ],
     "points": 9
    }
@@ -269,7 +273,9 @@
     "text": "Watch TV",
     "aliases": [
      "watch television",
-     "tv"
+     "tv",
+     "television",
+     "telly"
     ],
     "points": 24
    },
@@ -371,7 +377,8 @@
     "aliases": [
      "mobile",
      "cell phone",
-     "cellphone"
+     "cellphone",
+     "mobile phone"
     ],
     "points": 24
    },
@@ -386,7 +393,8 @@
     "text": "Glasses",
     "aliases": [
      "spectacles",
-     "eyeglasses"
+     "eyeglasses",
+     "specs"
     ],
     "points": 12
    },
@@ -466,7 +474,8 @@
     "aliases": [
      "music",
      "play music",
-     "radio"
+     "radio",
+     "spotify"
     ],
     "points": 28
    },
@@ -612,7 +621,9 @@
     "text": "Phone",
     "aliases": [
      "mobile",
-     "cell phone"
+     "cell phone",
+     "cellphone",
+     "mobile phone"
     ],
     "points": 24
    },
@@ -634,7 +645,9 @@
    },
    {
     "text": "Umbrella",
-    "aliases": [],
+    "aliases": [
+     "brolly"
+    ],
     "points": 9
    },
    {
@@ -715,7 +728,8 @@
     "text": "Coins",
     "aliases": [
      "coin",
-     "old coins"
+     "old coins",
+     "change"
     ],
     "points": 22
    },
@@ -731,7 +745,8 @@
    {
     "text": "Shoes",
     "aliases": [
-     "sneakers"
+     "sneakers",
+     "footwear"
     ],
     "points": 13
    },
@@ -814,7 +829,8 @@
     "aliases": [
      "plane",
      "aeroplane",
-     "jet"
+     "jet",
+     "aircraft"
     ],
     "points": 24
    },
@@ -883,7 +899,8 @@
     "aliases": [
      "cycling",
      "bike",
-     "spin"
+     "spin",
+     "ride a bike"
     ],
     "points": 12
    },
@@ -1054,7 +1071,8 @@
     "aliases": [
      "police",
      "cop",
-     "policeman"
+     "policeman",
+     "policewoman"
     ],
     "points": 26
    },
@@ -1104,7 +1122,8 @@
     "aliases": [
      "texting",
      "message",
-     "chat"
+     "chat",
+     "sms"
     ],
     "points": 28
    },
@@ -1123,7 +1142,9 @@
     "aliases": [
      "make calls",
      "phone calls",
-     "talk"
+     "talk",
+     "phone call",
+     "ring"
     ],
     "points": 17
    },
@@ -1238,7 +1259,8 @@
    {
     "text": "Play games",
     "aliases": [
-     "games"
+     "games",
+     "gaming"
     ],
     "points": 9
    },
@@ -1410,7 +1432,9 @@
     "aliases": [
      "tv",
      "television",
-     "netflix"
+     "netflix",
+     "watch television",
+     "telly"
     ],
     "points": 22
    },
@@ -1434,7 +1458,8 @@
     "text": "Play games",
     "aliases": [
      "games",
-     "video games"
+     "video games",
+     "gaming"
     ],
     "points": 11
    },
@@ -1454,7 +1479,8 @@
    {
     "text": "Hat",
     "aliases": [
-     "cowboy hat"
+     "cowboy hat",
+     "cap"
     ],
     "points": 28
    },
@@ -1578,7 +1604,8 @@
     "text": "Give gifts",
     "aliases": [
      "gifts",
-     "presents"
+     "presents",
+     "give presents"
     ],
     "points": 11
    },
@@ -1637,7 +1664,8 @@
    {
     "text": "Perfume",
     "aliases": [
-     "strong smell"
+     "strong smell",
+     "cologne"
     ],
     "points": 7
    }
@@ -1768,7 +1796,10 @@
     "text": "Planes",
     "aliases": [
      "airplane",
-     "plane lights"
+     "plane lights",
+     "jets",
+     "aircraft",
+     "airplanes"
     ],
     "points": 15
    },
@@ -1880,7 +1911,8 @@
     "text": "Hat",
     "aliases": [
      "beanie",
-     "winter hat"
+     "winter hat",
+     "cap"
     ],
     "points": 13
    },
@@ -1895,7 +1927,8 @@
     "text": "Sweater",
     "aliases": [
      "jumper",
-     "hoodie"
+     "hoodie",
+     "pullover"
     ],
     "points": 9
    }
@@ -2099,7 +2132,9 @@
    {
     "text": "Car",
     "aliases": [
-     "cars"
+     "cars",
+     "automobile",
+     "auto"
     ],
     "points": 30
    },
@@ -2155,7 +2190,8 @@
     "aliases": [
      "movies",
      "netflix",
-     "watch tv"
+     "watch tv",
+     "watch films"
     ],
     "points": 22
    },
@@ -2233,7 +2269,8 @@
     "text": "Turtle",
     "aliases": [
      "sea turtle",
-     "turtles"
+     "turtles",
+     "tortoise"
     ],
     "points": 10
    }
@@ -2343,7 +2380,9 @@
     "aliases": [
      "pee",
      "toilet",
-     "use the bathroom"
+     "use the bathroom",
+     "restroom",
+     "washroom"
     ],
     "points": 30
    },
@@ -2375,7 +2414,9 @@
     "text": "Baby crying",
     "aliases": [
      "baby",
-     "kids"
+     "kids",
+     "crying baby",
+     "crying"
     ],
     "points": 9
    },
@@ -2564,7 +2605,8 @@
     "aliases": [
      "movie",
      "cinema",
-     "movies"
+     "movies",
+     "watch a film"
     ],
     "points": 18
    },
@@ -2580,7 +2622,8 @@
     "text": "Walk",
     "aliases": [
      "go for a walk",
-     "take a walk"
+     "take a walk",
+     "stroll"
     ],
     "points": 9
    },
@@ -2599,7 +2642,9 @@
   "answers": [
    {
     "text": "Toilet",
-    "aliases": [],
+    "aliases": [
+     "loo"
+    ],
     "points": 28
    },
    {
@@ -2692,7 +2737,9 @@
     "aliases": [
      "tv",
      "netflix",
-     "television"
+     "television",
+     "watch television",
+     "telly"
     ],
     "points": 26
    },
@@ -2715,7 +2762,8 @@
    {
     "text": "Listen to music",
     "aliases": [
-     "music"
+     "music",
+     "spotify"
     ],
     "points": 14
    },
@@ -3017,7 +3065,8 @@
     "text": "Candy",
     "aliases": [
      "caramel",
-     "toffee"
+     "toffee",
+     "sweets"
     ],
     "points": 9
    },
@@ -3071,7 +3120,8 @@
     "text": "Teddy bear",
     "aliases": [
      "stuffed animal",
-     "teddy"
+     "teddy",
+     "plush"
     ],
     "points": 9
    },
@@ -3100,7 +3150,8 @@
     "aliases": [
      "pay",
      "low pay",
-     "money"
+     "money",
+     "wages"
     ],
     "points": 22
    },
@@ -3143,7 +3194,8 @@
    {
     "text": "Doctors",
     "aliases": [
-     "doctor"
+     "doctor",
+     "physicians"
     ],
     "points": 28
    },
@@ -3174,7 +3226,9 @@
     "text": "Medicine",
     "aliases": [
      "drugs",
-     "pills"
+     "pills",
+     "meds",
+     "medication"
     ],
     "points": 11
    },
@@ -3246,7 +3300,8 @@
    {
     "text": "Shoes",
     "aliases": [
-     "shoe"
+     "shoe",
+     "footwear"
     ],
     "points": 30
    },
@@ -3260,7 +3315,8 @@
    {
     "text": "Gloves",
     "aliases": [
-     "glove"
+     "glove",
+     "mittens"
     ],
     "points": 18
    },
@@ -3588,7 +3644,9 @@
     "text": "Car",
     "aliases": [
      "a car",
-     "new car"
+     "new car",
+     "automobile",
+     "auto"
     ],
     "points": 24
    },
@@ -3952,7 +4010,8 @@
    {
     "text": "TV",
     "aliases": [
-     "television"
+     "television",
+     "telly"
     ],
     "points": 24
    },
@@ -4001,7 +4060,9 @@
     "text": "Doctor",
     "aliases": [
      "doctors",
-     "surgeon"
+     "surgeon",
+     "physician",
+     "doc"
     ],
     "points": 21
    },
@@ -4025,7 +4086,9 @@
     "text": "Police officer",
     "aliases": [
      "police",
-     "cop"
+     "cop",
+     "policeman",
+     "policewoman"
     ],
     "points": 11
    },
@@ -4033,7 +4096,8 @@
     "text": "Singer",
     "aliases": [
      "pop star",
-     "musician"
+     "musician",
+     "vocalist"
     ],
     "points": 10
    }
@@ -4302,7 +4366,9 @@
     "aliases": [
      "bandage",
      "band aids",
-     "plasters"
+     "plasters",
+     "band-aid",
+     "plaster"
     ],
     "points": 34
    },
@@ -4329,14 +4395,16 @@
     "aliases": [
      "aspirin",
      "paracetamol",
-     "medicine"
+     "medicine",
+     "pain meds"
     ],
     "points": 8
    },
    {
     "text": "Gloves",
     "aliases": [
-     "rubber gloves"
+     "rubber gloves",
+     "mittens"
     ],
     "points": 7
    }
@@ -4469,7 +4537,8 @@
    {
     "text": "Ketchup",
     "aliases": [
-     "sauce"
+     "sauce",
+     "tomato sauce"
     ],
     "points": 13
    },
@@ -4483,7 +4552,8 @@
    {
     "text": "Pickles",
     "aliases": [
-     "pickle"
+     "pickle",
+     "gherkins"
     ],
     "points": 9
    }
@@ -4549,7 +4619,9 @@
    {
     "text": "Car",
     "aliases": [
-     "cars"
+     "cars",
+     "automobile",
+     "auto"
     ],
     "points": 30
    },
@@ -4670,7 +4742,9 @@
     "aliases": [
      "trash",
      "garbage",
-     "take out the bins"
+     "take out the bins",
+     "taking out the garbage",
+     "taking out rubbish"
     ],
     "points": 17
    },
@@ -4711,7 +4785,8 @@
     "text": "Costumes",
     "aliases": [
      "costume",
-     "dressing up"
+     "dressing up",
+     "fancy dress"
     ],
     "points": 22
    },
@@ -4857,7 +4932,8 @@
    {
     "text": "Charger",
     "aliases": [
-     "phone charger"
+     "phone charger",
+     "charging cable"
     ],
     "points": 34
    },
@@ -4973,7 +5049,8 @@
    {
     "text": "TV",
     "aliases": [
-     "television"
+     "television",
+     "telly"
     ],
     "points": 24
    },
@@ -4987,7 +5064,8 @@
    {
     "text": "Rug",
     "aliases": [
-     "carpet"
+     "carpet",
+     "mat"
     ],
     "points": 12
    },
@@ -4995,7 +5073,8 @@
     "text": "Lamp",
     "aliases": [
      "lights",
-     "lamps"
+     "lamps",
+     "light"
     ],
     "points": 9
    },
@@ -5003,7 +5082,8 @@
     "text": "Bookshelf",
     "aliases": [
      "shelves",
-     "books"
+     "books",
+     "shelf"
     ],
     "points": 7
    }
@@ -5106,7 +5186,8 @@
     "text": "Nap",
     "aliases": [
      "sleep",
-     "doze"
+     "doze",
+     "siesta"
     ],
     "points": 9
    }
@@ -5422,7 +5503,8 @@
     "text": "Watch movies",
     "aliases": [
      "movies",
-     "watch a movie"
+     "watch a movie",
+     "watch films"
     ],
     "points": 24
    },
@@ -5445,7 +5527,8 @@
    {
     "text": "Listen to music",
     "aliases": [
-     "music"
+     "music",
+     "spotify"
     ],
     "points": 9
    },
@@ -5518,7 +5601,8 @@
     "text": "Pajamas",
     "aliases": [
      "pyjamas",
-     "pjs"
+     "pjs",
+     "nightwear"
     ],
     "points": 38
    },
@@ -5527,7 +5611,8 @@
     "aliases": [
      "tshirt",
      "old shirt",
-     "shirt"
+     "shirt",
+     "tee"
     ],
     "points": 24
    },
@@ -5564,7 +5649,8 @@
     "text": "Movie theater",
     "aliases": [
      "cinema",
-     "movies"
+     "movies",
+     "theater"
     ],
     "points": 28
    },
@@ -5581,7 +5667,10 @@
     "text": "Airplane",
     "aliases": [
      "plane",
-     "flight"
+     "flight",
+     "jet",
+     "aircraft",
+     "aeroplane"
     ],
     "points": 17
    },
@@ -5739,7 +5828,8 @@
     "text": "A phone",
     "aliases": [
      "phone",
-     "mobile"
+     "mobile",
+     "cell phone"
     ],
     "points": 13
    },
@@ -5778,7 +5868,8 @@
     "text": "Listen to music",
     "aliases": [
      "music",
-     "sing"
+     "sing",
+     "spotify"
     ],
     "points": 22
    },
@@ -5996,7 +6087,8 @@
    {
     "text": "Makeup",
     "aliases": [
-     "wear makeup"
+     "wear makeup",
+     "cosmetics"
     ],
     "points": 13
    },
@@ -6004,7 +6096,8 @@
     "text": "Exercise",
     "aliases": [
      "work out",
-     "stay fit"
+     "stay fit",
+     "workout"
     ],
     "points": 11
    },
@@ -6232,7 +6325,8 @@
     "text": "Security guard",
     "aliases": [
      "security",
-     "guard"
+     "guard",
+     "bouncer"
     ],
     "points": 21
    },
@@ -6240,7 +6334,9 @@
     "text": "Police officer",
     "aliases": [
      "police",
-     "cop"
+     "cop",
+     "policeman",
+     "policewoman"
     ],
     "points": 18
    },
@@ -6255,7 +6351,9 @@
     "text": "Taxi driver",
     "aliases": [
      "uber driver",
-     "driver"
+     "driver",
+     "cab driver",
+     "cabbie"
     ],
     "points": 11
    },
@@ -6308,7 +6406,8 @@
     "text": "Play games",
     "aliases": [
      "games",
-     "lawn games"
+     "lawn games",
+     "gaming"
     ],
     "points": 9
    },
@@ -6356,7 +6455,9 @@
    },
    {
     "text": "Umbrella",
-    "aliases": [],
+    "aliases": [
+     "brolly"
+    ],
     "points": 11
    },
    {
@@ -6530,7 +6631,9 @@
     "text": "Car",
     "aliases": [
      "cars",
-     "rental car"
+     "rental car",
+     "automobile",
+     "auto"
     ],
     "points": 24
    },
@@ -6538,7 +6641,9 @@
     "text": "Movies",
     "aliases": [
      "movie",
-     "dvd"
+     "dvd",
+     "films",
+     "cinema"
     ],
     "points": 18
    },
@@ -6546,7 +6651,8 @@
     "text": "Tuxedo",
     "aliases": [
      "suit",
-     "dress"
+     "dress",
+     "tux"
     ],
     "points": 12
    },
@@ -6554,7 +6660,8 @@
     "text": "Bikes",
     "aliases": [
      "bike",
-     "scooter"
+     "scooter",
+     "bicycles"
     ],
     "points": 9
    },
@@ -6782,7 +6889,9 @@
     "text": "Phone",
     "aliases": [
      "mobile",
-     "cell phone"
+     "cell phone",
+     "cellphone",
+     "mobile phone"
     ],
     "points": 24
    },
@@ -6797,14 +6906,17 @@
    {
     "text": "Glasses",
     "aliases": [
-     "spectacles"
+     "spectacles",
+     "specs",
+     "eyeglasses"
     ],
     "points": 12
    },
    {
     "text": "Charger",
     "aliases": [
-     "phone charger"
+     "phone charger",
+     "charging cable"
     ],
     "points": 9
    },
@@ -6865,7 +6977,8 @@
     "text": "Money",
     "aliases": [
      "inheritance",
-     "wealth"
+     "wealth",
+     "cash"
     ],
     "points": 9
    }
@@ -7041,7 +7154,11 @@
     "text": "Phone",
     "aliases": [
      "scrolling",
-     "screen time"
+     "screen time",
+     "cell phone",
+     "mobile",
+     "cellphone",
+     "mobile phone"
     ],
     "points": 12
    },
@@ -7078,7 +7195,8 @@
     "text": "Watch movies",
     "aliases": [
      "movies",
-     "movie marathon"
+     "movie marathon",
+     "watch films"
     ],
     "points": 22
    },
@@ -7096,7 +7214,8 @@
     "aliases": [
      "games",
      "video games",
-     "truth or dare"
+     "truth or dare",
+     "gaming"
     ],
     "points": 13
    },
@@ -7124,7 +7243,9 @@
    {
     "text": "Car",
     "aliases": [
-     "cars"
+     "cars",
+     "automobile",
+     "auto"
     ],
     "points": 30
    },
@@ -7132,14 +7253,18 @@
     "text": "Phone",
     "aliases": [
      "smartphone",
-     "mobile"
+     "mobile",
+     "cell phone",
+     "cellphone",
+     "mobile phone"
     ],
     "points": 24
    },
    {
     "text": "TV",
     "aliases": [
-     "television"
+     "television",
+     "telly"
     ],
     "points": 18
    },
@@ -7162,7 +7287,8 @@
    {
     "text": "Watch",
     "aliases": [
-     "watches"
+     "watches",
+     "wristwatch"
     ],
     "points": 7
    }
@@ -7191,7 +7317,10 @@
     "text": "Watch TV",
     "aliases": [
      "tv",
-     "netflix"
+     "netflix",
+     "television",
+     "watch television",
+     "telly"
     ],
     "points": 17
    },
@@ -7207,7 +7336,8 @@
     "text": "Nap",
     "aliases": [
      "sleep",
-     "rest"
+     "rest",
+     "siesta"
     ],
     "points": 11
    },
@@ -7304,7 +7434,8 @@
     "text": "Shoes",
     "aliases": [
      "sneakers",
-     "new shoes"
+     "new shoes",
+     "footwear"
     ],
     "points": 13
    },
@@ -7401,7 +7532,10 @@
     "aliases": [
      "tv",
      "binge watch",
-     "netflix"
+     "netflix",
+     "television",
+     "watch television",
+     "telly"
     ],
     "points": 18
    },
@@ -7512,7 +7646,8 @@
    {
     "text": "Lamp",
     "aliases": [
-     "desk lamp"
+     "desk lamp",
+     "light"
     ],
     "points": 13
    },
@@ -7535,7 +7670,7 @@
   ]
  },
  {
-  "text": "Name a food",
+  "text": "Name a favorite food",
   "answers": [
    {
     "text": "Pizza",
@@ -7544,12 +7679,17 @@
    },
    {
     "text": "Burger",
-    "aliases": [],
+    "aliases": [
+     "hamburger"
+    ],
     "points": 24
    },
    {
     "text": "Fries",
-    "aliases": [],
+    "aliases": [
+     "french fries",
+     "chips"
+    ],
     "points": 16
    },
    {
@@ -7559,7 +7699,10 @@
    },
    {
     "text": "Pasta",
-    "aliases": [],
+    "aliases": [
+     "noodles",
+     "spaghetti"
+    ],
     "points": 7
    },
    {
@@ -7570,7 +7713,7 @@
   ]
  },
  {
-  "text": "Name an animal",
+  "text": "Name a common animal",
   "answers": [
    {
     "text": "Dog",
@@ -7605,7 +7748,7 @@
   ]
  },
  {
-  "text": "Name a place",
+  "text": "Name a famous city",
   "answers": [
    {
     "text": "Paris",
@@ -7619,7 +7762,9 @@
    },
    {
     "text": "New York",
-    "aliases": [],
+    "aliases": [
+     "nyc"
+    ],
     "points": 16
    },
    {
@@ -7640,7 +7785,7 @@
   ]
  },
  {
-  "text": "Name something you place for a trip",
+  "text": "Name something you do before a trip",
   "answers": [
    {
     "text": "Pack",
@@ -7675,7 +7820,7 @@
   ]
  },
  {
-  "text": "Name something you place at an airport",
+  "text": "Name a step in catching a flight",
   "answers": [
    {
     "text": "Check In",
@@ -7710,11 +7855,14 @@
   ]
  },
  {
-  "text": "Name a place you might take",
+  "text": "Name a way to travel on vacation",
   "answers": [
    {
     "text": "Flight",
-    "aliases": [],
+    "aliases": [
+     "plane",
+     "fly"
+    ],
     "points": 38
    },
    {
@@ -7729,12 +7877,16 @@
    },
    {
     "text": "Taxi",
-    "aliases": [],
+    "aliases": [
+     "cab"
+    ],
     "points": 10
    },
    {
     "text": "Cruise",
-    "aliases": [],
+    "aliases": [
+     "cruise ship"
+    ],
     "points": 7
    },
    {
@@ -7745,7 +7897,7 @@
   ]
  },
  {
-  "text": "Name something you see in a place",
+  "text": "Name a place you go when traveling",
   "answers": [
    {
     "text": "Hotel",
@@ -7759,7 +7911,9 @@
    },
    {
     "text": "Train Station",
-    "aliases": [],
+    "aliases": [
+     "station"
+    ],
     "points": 16
    },
    {
@@ -7774,13 +7928,16 @@
    },
    {
     "text": "Tourist Attraction",
-    "aliases": [],
+    "aliases": [
+     "attraction",
+     "landmark"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something you find in a household item",
+  "text": "Name a room in a house",
   "answers": [
    {
     "text": "Kitchen",
@@ -7794,7 +7951,10 @@
    },
    {
     "text": "Bathroom",
-    "aliases": [],
+    "aliases": [
+     "restroom",
+     "washroom"
+    ],
     "points": 16
    },
    {
@@ -7815,11 +7975,15 @@
   ]
  },
  {
-  "text": "Name something you household item at home",
+  "text": "Name something people do at home",
   "answers": [
    {
     "text": "Watch Tv",
-    "aliases": [],
+    "aliases": [
+     "television",
+     "watch television",
+     "telly"
+    ],
     "points": 38
    },
    {
@@ -7850,11 +8014,13 @@
   ]
  },
  {
-  "text": "Name a household item appliance",
+  "text": "Name a home appliance",
   "answers": [
    {
     "text": "Refrigerator",
-    "aliases": [],
+    "aliases": [
+     "fridge"
+    ],
     "points": 38
    },
    {
@@ -7879,13 +8045,15 @@
    },
    {
     "text": "Washing Machine",
-    "aliases": [],
+    "aliases": [
+     "washer"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something soft in a household item",
+  "text": "Name something soft in a house",
   "answers": [
    {
     "text": "Bed",
@@ -7904,12 +8072,17 @@
    },
    {
     "text": "Carpet",
-    "aliases": [],
+    "aliases": [
+     "rug"
+    ],
     "points": 10
    },
    {
     "text": "Couch",
-    "aliases": [],
+    "aliases": [
+     "sofa",
+     "settee"
+    ],
     "points": 7
    },
    {
@@ -7920,7 +8093,7 @@
   ]
  },
  {
-  "text": "Name something you clean in a household item",
+  "text": "Name something people clean at home",
   "answers": [
    {
     "text": "Floor",
@@ -7934,7 +8107,10 @@
    },
    {
     "text": "Bathroom",
-    "aliases": [],
+    "aliases": [
+     "restroom",
+     "washroom"
+    ],
     "points": 16
    },
    {
@@ -7944,7 +8120,9 @@
    },
    {
     "text": "Carpet",
-    "aliases": [],
+    "aliases": [
+     "rug"
+    ],
     "points": 7
    },
    {
@@ -7955,7 +8133,7 @@
   ]
  },
  {
-  "text": "Name something you keep in a household item",
+  "text": "Name a place where you store things at home",
   "answers": [
    {
     "text": "Drawer",
@@ -7964,12 +8142,16 @@
    },
    {
     "text": "Closet",
-    "aliases": [],
+    "aliases": [
+     "wardrobe"
+    ],
     "points": 24
    },
    {
     "text": "Cabinet",
-    "aliases": [],
+    "aliases": [
+     "cupboard"
+    ],
     "points": 16
    },
    {
@@ -7979,7 +8161,9 @@
    },
    {
     "text": "Fridge",
-    "aliases": [],
+    "aliases": [
+     "refrigerator"
+    ],
     "points": 7
    },
    {
@@ -8025,11 +8209,13 @@
   ]
  },
  {
-  "text": "Name something students school subject",
+  "text": "Name something students do in class",
   "answers": [
    {
     "text": "Study",
-    "aliases": [],
+    "aliases": [
+     "revise"
+    ],
     "points": 38
    },
    {
@@ -8060,7 +8246,7 @@
   ]
  },
  {
-  "text": "Name something in a school subject",
+  "text": "Name something associated with school",
   "answers": [
    {
     "text": "Classroom",
@@ -8095,7 +8281,7 @@
   ]
  },
  {
-  "text": "Name a school subject students use",
+  "text": "Name a school supply students use",
   "answers": [
    {
     "text": "Pencil",
@@ -8130,7 +8316,7 @@
   ]
  },
  {
-  "text": "Name a reason a student might school subject",
+  "text": "Name something a student might do during exams",
   "answers": [
    {
     "text": "Be Late",
@@ -8144,7 +8330,9 @@
    },
    {
     "text": "Study",
-    "aliases": [],
+    "aliases": [
+     "revise"
+    ],
     "points": 16
    },
    {
@@ -8200,7 +8388,7 @@
   ]
  },
  {
-  "text": "Name a sport played with a sport",
+  "text": "Name something used to play a sport",
   "answers": [
    {
     "text": "Ball",
@@ -8235,11 +8423,13 @@
   ]
  },
  {
-  "text": "Name something athletes sport",
+  "text": "Name something athletes do",
   "answers": [
    {
     "text": "Run",
-    "aliases": [],
+    "aliases": [
+     "jog"
+    ],
     "points": 38
    },
    {
@@ -8249,7 +8439,9 @@
    },
    {
     "text": "Stretch",
-    "aliases": [],
+    "aliases": [
+     "stretching"
+    ],
     "points": 16
    },
    {
@@ -8270,11 +8462,13 @@
   ]
  },
  {
-  "text": "Name something you see at a sport",
+  "text": "Name something sports fans go to see",
   "answers": [
    {
     "text": "Stadium",
-    "aliases": [],
+    "aliases": [
+     "arena"
+    ],
     "points": 38
    },
    {
@@ -8305,7 +8499,7 @@
   ]
  },
  {
-  "text": "Name a piece of sport equipment",
+  "text": "Name a piece of sports equipment",
   "answers": [
    {
     "text": "Helmet",
@@ -8324,7 +8518,9 @@
    },
    {
     "text": "Gloves",
-    "aliases": [],
+    "aliases": [
+     "mittens"
+    ],
     "points": 10
    },
    {
@@ -8334,7 +8530,10 @@
    },
    {
     "text": "Cleats",
-    "aliases": [],
+    "aliases": [
+     "boots",
+     "football boots"
+    ],
     "points": 5
    }
   ]
@@ -8343,23 +8542,32 @@
   "text": "Name a form of entertainment",
   "answers": [
    {
-    "text": "Superhero",
-    "aliases": [],
+    "text": "Music",
+    "aliases": [
+     "songs"
+    ],
     "points": 38
    },
    {
     "text": "Movie",
-    "aliases": [],
+    "aliases": [
+     "film"
+    ],
     "points": 24
    },
    {
     "text": "Tv Show",
-    "aliases": [],
+    "aliases": [
+     "series",
+     "show"
+    ],
     "points": 16
    },
    {
     "text": "Video Game",
-    "aliases": [],
+    "aliases": [
+     "gaming"
+    ],
     "points": 10
    },
    {
@@ -8369,22 +8577,29 @@
    },
    {
     "text": "Comic",
-    "aliases": [],
+    "aliases": [
+     "comic book"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name a famous form of entertainment",
+  "text": "Name a kind of celebrity",
   "answers": [
    {
     "text": "Actor",
-    "aliases": [],
+    "aliases": [
+     "actress"
+    ],
     "points": 38
    },
    {
     "text": "Singer",
-    "aliases": [],
+    "aliases": [
+     "vocalist",
+     "pop star"
+    ],
     "points": 24
    },
    {
@@ -8404,13 +8619,15 @@
    },
    {
     "text": "Athlete",
-    "aliases": [],
+    "aliases": [
+     "sportsman"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name a form of entertainment character",
+  "text": "Name a famous fictional character",
   "answers": [
    {
     "text": "Harry Potter",
@@ -8434,32 +8651,47 @@
    },
    {
     "text": "Homer Simpson",
-    "aliases": [],
+    "aliases": [
+     "homer"
+    ],
     "points": 7
    },
    {
     "text": "Mickey Mouse",
-    "aliases": [],
+    "aliases": [
+     "mickey"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something you watch on a form of entertainment",
+  "text": "Name something you watch movies on",
   "answers": [
    {
     "text": "Tv",
-    "aliases": [],
+    "aliases": [
+     "television",
+     "telly"
+    ],
     "points": 38
    },
    {
     "text": "Streaming Service",
-    "aliases": [],
+    "aliases": [
+     "netflix",
+     "streaming"
+    ],
     "points": 24
    },
    {
     "text": "Phone",
-    "aliases": [],
+    "aliases": [
+     "cell phone",
+     "mobile",
+     "cellphone",
+     "mobile phone"
+    ],
     "points": 16
    },
    {
@@ -8469,18 +8701,23 @@
    },
    {
     "text": "Movie Screen",
-    "aliases": [],
+    "aliases": [
+     "cinema",
+     "big screen"
+    ],
     "points": 7
    },
    {
     "text": "Tablet",
-    "aliases": [],
+    "aliases": [
+     "ipad"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name a form of entertainment people play",
+  "text": "Name a popular video game",
   "answers": [
    {
     "text": "Minecraft",
@@ -8509,13 +8746,15 @@
    },
    {
     "text": "Call Of Duty",
-    "aliases": [],
+    "aliases": [
+     "cod"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name a form of entertainment music genre",
+  "text": "Name a music genre",
   "answers": [
    {
     "text": "Pop",
@@ -8554,7 +8793,12 @@
   "answers": [
    {
     "text": "Smartphone",
-    "aliases": [],
+    "aliases": [
+     "phone",
+     "mobile",
+     "cell phone",
+     "iphone"
+    ],
     "points": 38
    },
    {
@@ -8564,32 +8808,48 @@
    },
    {
     "text": "Tablet",
-    "aliases": [],
+    "aliases": [
+     "ipad"
+    ],
     "points": 16
    },
    {
     "text": "Smartwatch",
-    "aliases": [],
+    "aliases": [
+     "apple watch"
+    ],
     "points": 10
    },
    {
     "text": "Desktop Computer",
-    "aliases": [],
+    "aliases": [
+     "desktop",
+     "pc",
+     "computer"
+    ],
     "points": 7
    },
    {
     "text": "Game Console",
-    "aliases": [],
+    "aliases": [
+     "console",
+     "playstation",
+     "xbox",
+     "nintendo"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name an app people technology device",
+  "text": "Name something people use apps for",
   "answers": [
    {
     "text": "Text",
-    "aliases": [],
+    "aliases": [
+     "sms",
+     "texting"
+    ],
     "points": 38
    },
    {
@@ -8599,12 +8859,17 @@
    },
    {
     "text": "Watch Videos",
-    "aliases": [],
+    "aliases": [
+     "youtube"
+    ],
     "points": 16
    },
    {
     "text": "Listen To Music",
-    "aliases": [],
+    "aliases": [
+     "music",
+     "spotify"
+    ],
     "points": 10
    },
    {
@@ -8614,13 +8879,17 @@
    },
    {
     "text": "Navigate",
-    "aliases": [],
+    "aliases": [
+     "maps",
+     "gps",
+     "google maps"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something you use with a technology device",
+  "text": "Name something you use with a desktop computer",
   "answers": [
    {
     "text": "Keyboard",
@@ -8634,28 +8903,39 @@
    },
    {
     "text": "Charger",
-    "aliases": [],
+    "aliases": [
+     "charging cable"
+    ],
     "points": 16
    },
    {
     "text": "Headphones",
-    "aliases": [],
+    "aliases": [
+     "earphones",
+     "earbuds",
+     "airpods"
+    ],
     "points": 10
    },
    {
     "text": "Monitor",
-    "aliases": [],
+    "aliases": [
+     "screen",
+     "display"
+    ],
     "points": 7
    },
    {
     "text": "Webcam",
-    "aliases": [],
+    "aliases": [
+     "camera"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name a technology device company",
+  "text": "Name a big tech company",
   "answers": [
    {
     "text": "Apple",
@@ -8684,17 +8964,21 @@
    },
    {
     "text": "Meta",
-    "aliases": [],
+    "aliases": [
+     "facebook"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something you do on a technology device",
+  "text": "Name something people do on the internet",
   "answers": [
    {
     "text": "Search",
-    "aliases": [],
+    "aliases": [
+     "google"
+    ],
     "points": 38
    },
    {
@@ -8704,7 +8988,9 @@
    },
    {
     "text": "Watch Videos",
-    "aliases": [],
+    "aliases": [
+     "youtube"
+    ],
     "points": 16
    },
    {
@@ -8714,7 +9000,9 @@
    },
    {
     "text": "Play Games",
-    "aliases": [],
+    "aliases": [
+     "gaming"
+    ],
     "points": 7
    },
    {
@@ -8725,21 +9013,30 @@
   ]
  },
  {
-  "text": "Name a technology device accessory",
+  "text": "Name a phone accessory",
   "answers": [
    {
     "text": "Charger",
-    "aliases": [],
+    "aliases": [
+     "charging cable"
+    ],
     "points": 38
    },
    {
     "text": "Case",
-    "aliases": [],
+    "aliases": [
+     "phone case",
+     "cover"
+    ],
     "points": 24
    },
    {
     "text": "Headphones",
-    "aliases": [],
+    "aliases": [
+     "earphones",
+     "earbuds",
+     "airpods"
+    ],
     "points": 16
    },
    {
@@ -8764,7 +9061,10 @@
   "answers": [
    {
     "text": "Doctor",
-    "aliases": [],
+    "aliases": [
+     "physician",
+     "doc"
+    ],
     "points": 38
    },
    {
@@ -8779,7 +9079,9 @@
    },
    {
     "text": "Lawyer",
-    "aliases": [],
+    "aliases": [
+     "attorney"
+    ],
     "points": 10
    },
    {
@@ -8795,7 +9097,7 @@
   ]
  },
  {
-  "text": "Name something you find in an job",
+  "text": "Name something associated with office life",
   "answers": [
    {
     "text": "Office",
@@ -8830,7 +9132,7 @@
   ]
  },
  {
-  "text": "Name something people do at job",
+  "text": "Name something people do at the office",
   "answers": [
    {
     "text": "Work",
@@ -8865,7 +9167,7 @@
   ]
  },
  {
-  "text": "Name something you bring to job",
+  "text": "Name something people bring to work",
   "answers": [
    {
     "text": "Laptop",
@@ -8884,12 +9186,19 @@
    },
    {
     "text": "Phone",
-    "aliases": [],
+    "aliases": [
+     "cell phone",
+     "mobile",
+     "cellphone",
+     "mobile phone"
+    ],
     "points": 10
    },
    {
     "text": "Id",
-    "aliases": [],
+    "aliases": [
+     "identification"
+    ],
     "points": 7
    },
    {
@@ -8900,21 +9209,29 @@
   ]
  },
  {
-  "text": "Name a reason someone might miss job",
+  "text": "Name a reason people miss work",
   "answers": [
    {
     "text": "Traffic",
-    "aliases": [],
+    "aliases": [
+     "traffic jam"
+    ],
     "points": 38
    },
    {
     "text": "Illness",
-    "aliases": [],
+    "aliases": [
+     "sick",
+     "sickness"
+    ],
     "points": 24
    },
    {
     "text": "Vacation",
-    "aliases": [],
+    "aliases": [
+     "holiday",
+     "trip"
+    ],
     "points": 16
    },
    {
@@ -8924,12 +9241,17 @@
    },
    {
     "text": "Family Emergency",
-    "aliases": [],
+    "aliases": [
+     "emergency"
+    ],
     "points": 7
    },
    {
     "text": "Oversleeping",
-    "aliases": [],
+    "aliases": [
+     "overslept",
+     "slept in"
+    ],
     "points": 5
    }
   ]
@@ -8944,22 +9266,31 @@
    },
    {
     "text": "Jeans",
-    "aliases": [],
+    "aliases": [
+     "denim"
+    ],
     "points": 24
    },
    {
     "text": "Dress",
-    "aliases": [],
+    "aliases": [
+     "gown"
+    ],
     "points": 16
    },
    {
     "text": "Jacket",
-    "aliases": [],
+    "aliases": [
+     "coat"
+    ],
     "points": 10
    },
    {
     "text": "Sweater",
-    "aliases": [],
+    "aliases": [
+     "jumper",
+     "pullover"
+    ],
     "points": 7
    },
    {
@@ -8970,7 +9301,7 @@
   ]
  },
  {
-  "text": "Name something you wear on your clothing item",
+  "text": "Name a body part you put clothing on",
   "answers": [
    {
     "text": "Head",
@@ -9005,16 +9336,20 @@
   ]
  },
  {
-  "text": "Name a clothing item accessory",
+  "text": "Name a fashion accessory",
   "answers": [
    {
     "text": "Watch",
-    "aliases": [],
+    "aliases": [
+     "wristwatch"
+    ],
     "points": 38
    },
    {
     "text": "Hat",
-    "aliases": [],
+    "aliases": [
+     "cap"
+    ],
     "points": 24
    },
    {
@@ -9029,18 +9364,23 @@
    },
    {
     "text": "Sunglasses",
-    "aliases": [],
+    "aliases": [
+     "shades"
+    ],
     "points": 7
    },
    {
     "text": "Bag",
-    "aliases": [],
+    "aliases": [
+     "purse",
+     "handbag"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something people wear to a clothing item",
+  "text": "Name an occasion people dress for",
   "answers": [
    {
     "text": "Wedding",
@@ -9075,7 +9415,7 @@
   ]
  },
  {
-  "text": "Name a natural feature",
+  "text": "Name something you see in nature",
   "answers": [
    {
     "text": "Tree",
@@ -9110,11 +9450,13 @@
   ]
  },
  {
-  "text": "Name something you see in a natural feature",
+  "text": "Name an outdoor place people explore",
   "answers": [
    {
     "text": "Forest",
-    "aliases": [],
+    "aliases": [
+     "woods"
+    ],
     "points": 38
    },
    {
@@ -9124,12 +9466,16 @@
    },
    {
     "text": "Ocean",
-    "aliases": [],
+    "aliases": [
+     "sea"
+    ],
     "points": 16
    },
    {
     "text": "Garden",
-    "aliases": [],
+    "aliases": [
+     "yard"
+    ],
     "points": 10
    },
    {
@@ -9145,7 +9491,7 @@
   ]
  },
  {
-  "text": "Name a type of natural feature",
+  "text": "Name something you notice out the window",
   "answers": [
    {
     "text": "Weather",
@@ -9180,16 +9526,20 @@
   ]
  },
  {
-  "text": "Name something found in the natural feature",
+  "text": "Name a type of landscape",
   "answers": [
    {
     "text": "Ocean",
-    "aliases": [],
+    "aliases": [
+     "sea"
+    ],
     "points": 38
    },
    {
     "text": "Forest",
-    "aliases": [],
+    "aliases": [
+     "woods"
+    ],
     "points": 24
    },
    {
@@ -9199,7 +9549,9 @@
    },
    {
     "text": "Jungle",
-    "aliases": [],
+    "aliases": [
+     "rainforest"
+    ],
     "points": 10
    },
    {
@@ -9209,7 +9561,9 @@
    },
    {
     "text": "Garden",
-    "aliases": [],
+    "aliases": [
+     "yard"
+    ],
     "points": 5
    }
   ]
@@ -9219,7 +9573,9 @@
   "answers": [
    {
     "text": "Christmas",
-    "aliases": [],
+    "aliases": [
+     "xmas"
+    ],
     "points": 38
    },
    {
@@ -9244,13 +9600,15 @@
    },
    {
     "text": "Valentine's Day",
-    "aliases": [],
+    "aliases": [
+     "valentines"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something people holiday on a holiday",
+  "text": "Name something people do during the holidays",
   "answers": [
    {
     "text": "Eat",
@@ -9269,12 +9627,16 @@
    },
    {
     "text": "Gift",
-    "aliases": [],
+    "aliases": [
+     "present"
+    ],
     "points": 10
    },
    {
     "text": "Watch",
-    "aliases": [],
+    "aliases": [
+     "wristwatch"
+    ],
     "points": 7
    },
    {
@@ -9285,16 +9647,23 @@
   ]
  },
  {
-  "text": "Name something you never leave daily activity without",
+  "text": "Name something you never leave home without",
   "answers": [
    {
     "text": "Phone",
-    "aliases": [],
+    "aliases": [
+     "cell phone",
+     "mobile",
+     "cellphone",
+     "mobile phone"
+    ],
     "points": 38
    },
    {
     "text": "Wallet",
-    "aliases": [],
+    "aliases": [
+     "purse"
+    ],
     "points": 24
    },
    {
@@ -9304,23 +9673,29 @@
    },
    {
     "text": "Shoes",
-    "aliases": [],
+    "aliases": [
+     "footwear"
+    ],
     "points": 10
    },
    {
     "text": "Watch",
-    "aliases": [],
+    "aliases": [
+     "wristwatch"
+    ],
     "points": 7
    },
    {
     "text": "Id",
-    "aliases": [],
+    "aliases": [
+     "identification"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something people do before daily activity",
+  "text": "Name something people get ready for",
   "answers": [
    {
     "text": "Bed",
@@ -9355,7 +9730,7 @@
   ]
  },
  {
-  "text": "Name something people do when they are daily activity",
+  "text": "Name a common mood or feeling",
   "answers": [
    {
     "text": "Bored",
@@ -9390,7 +9765,7 @@
   ]
  },
  {
-  "text": "Name something you can daily activity",
+  "text": "Name something you can do with a phone",
   "answers": [
    {
     "text": "Buy",
@@ -9425,7 +9800,7 @@
   ]
  },
  {
-  "text": "Name something families do family",
+  "text": "Name a way families spend time",
   "answers": [
    {
     "text": "Together",
@@ -9460,7 +9835,7 @@
   ]
  },
  {
-  "text": "Name something a family might give you",
+  "text": "Name someone people love most",
   "answers": [
    {
     "text": "Parent",
@@ -9479,7 +9854,12 @@
    },
    {
     "text": "Grandparent",
-    "aliases": [],
+    "aliases": [
+     "grandma",
+     "grandpa",
+     "grandmother",
+     "grandfather"
+    ],
     "points": 10
    },
    {
@@ -9489,13 +9869,15 @@
    },
    {
     "text": "Child",
-    "aliases": [],
+    "aliases": [
+     "kid"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name a family activity",
+  "text": "Name a word that goes before 'fun'",
   "answers": [
    {
     "text": "Family",
@@ -9530,21 +9912,29 @@
   ]
  },
  {
-  "text": "Name something people buy at a store",
+  "text": "Name a type of store",
   "answers": [
    {
     "text": "Supermarket",
-    "aliases": [],
+    "aliases": [
+     "grocery store"
+    ],
     "points": 38
    },
    {
     "text": "Mall",
-    "aliases": [],
+    "aliases": [
+     "shopping mall",
+     "shopping center"
+    ],
     "points": 24
    },
    {
     "text": "Pharmacy",
-    "aliases": [],
+    "aliases": [
+     "drugstore",
+     "chemist"
+    ],
     "points": 16
    },
    {
@@ -9559,13 +9949,15 @@
    },
    {
     "text": "Convenience Store",
-    "aliases": [],
+    "aliases": [
+     "corner shop"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something people shop for store",
+  "text": "Name a way people shop",
   "answers": [
    {
     "text": "Online",
@@ -9600,7 +9992,7 @@
   ]
  },
  {
-  "text": "Name something that often goes on store",
+  "text": "Name a word you hear while shopping",
   "answers": [
    {
     "text": "Sale",
@@ -9635,7 +10027,7 @@
   ]
  },
  {
-  "text": "Name something you see at a event",
+  "text": "Name an event people get invited to",
   "answers": [
    {
     "text": "Party",
@@ -9654,7 +10046,9 @@
    },
    {
     "text": "Concert",
-    "aliases": [],
+    "aliases": [
+     "gig"
+    ],
     "points": 10
    },
    {
@@ -9670,7 +10064,7 @@
   ]
  },
  {
-  "text": "Name a event food",
+  "text": "Name an occasion with lots of food",
   "answers": [
    {
     "text": "Party",
@@ -9709,7 +10103,10 @@
   "answers": [
    {
     "text": "Car",
-    "aliases": [],
+    "aliases": [
+     "automobile",
+     "auto"
+    ],
     "points": 38
    },
    {
@@ -9729,7 +10126,12 @@
    },
    {
     "text": "Airplane",
-    "aliases": [],
+    "aliases": [
+     "jet",
+     "plane",
+     "aircraft",
+     "aeroplane"
+    ],
     "points": 7
    },
    {
@@ -9740,11 +10142,14 @@
   ]
  },
  {
-  "text": "Name something you find in a vehicle",
+  "text": "Name something associated with transportation",
   "answers": [
    {
     "text": "Car",
-    "aliases": [],
+    "aliases": [
+     "automobile",
+     "auto"
+    ],
     "points": 38
    },
    {
@@ -9759,7 +10164,12 @@
    },
    {
     "text": "Airplane",
-    "aliases": [],
+    "aliases": [
+     "jet",
+     "plane",
+     "aircraft",
+     "aeroplane"
+    ],
     "points": 10
    },
    {
@@ -9775,7 +10185,7 @@
   ]
  },
  {
-  "text": "Name something people do while vehicle",
+  "text": "Name a time people listen to music or podcasts",
   "answers": [
    {
     "text": "Driving",
@@ -9810,42 +10220,57 @@
   ]
  },
  {
-  "text": "Name an exercise people exercise",
+  "text": "Name a way people exercise",
   "answers": [
    {
     "text": "Run",
-    "aliases": [],
+    "aliases": [
+     "jog"
+    ],
     "points": 38
    },
    {
     "text": "Walk",
-    "aliases": [],
+    "aliases": [
+     "stroll"
+    ],
     "points": 24
    },
    {
     "text": "Lift Weights",
-    "aliases": [],
+    "aliases": [
+     "weights",
+     "weightlifting"
+    ],
     "points": 16
    },
    {
     "text": "Swim",
-    "aliases": [],
+    "aliases": [
+     "swimming"
+    ],
     "points": 10
    },
    {
     "text": "Cycle",
-    "aliases": [],
+    "aliases": [
+     "bike",
+     "cycling",
+     "ride a bike"
+    ],
     "points": 7
    },
    {
     "text": "Stretch",
-    "aliases": [],
+    "aliases": [
+     "stretching"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something found at a exercise",
+  "text": "Name a place people go for their health",
   "answers": [
    {
     "text": "Gym",
@@ -9864,7 +10289,10 @@
    },
    {
     "text": "Pharmacy",
-    "aliases": [],
+    "aliases": [
+     "drugstore",
+     "chemist"
+    ],
     "points": 10
    },
    {
@@ -9874,13 +10302,15 @@
    },
    {
     "text": "Pool",
-    "aliases": [],
+    "aliases": [
+     "swimming pool"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something people do to stay exercise",
+  "text": "Name something people try to stay",
   "answers": [
    {
     "text": "Healthy",
@@ -9915,7 +10345,7 @@
   ]
  },
  {
-  "text": "Name something people use money on",
+  "text": "Name something you can do with money",
   "answers": [
    {
     "text": "Spend",
@@ -9950,7 +10380,7 @@
   ]
  },
  {
-  "text": "Name something people pay use",
+  "text": "Name something people pay for every month",
   "answers": [
    {
     "text": "Rent",
@@ -9974,7 +10404,10 @@
    },
    {
     "text": "Gas",
-    "aliases": [],
+    "aliases": [
+     "petrol",
+     "fuel"
+    ],
     "points": 7
    },
    {
@@ -9985,7 +10418,7 @@
   ]
  },
  {
-  "text": "Name a way to use money",
+  "text": "Name a money habit",
   "answers": [
    {
     "text": "Save",
@@ -10020,46 +10453,61 @@
   ]
  },
  {
-  "text": "Name a way people communication method",
+  "text": "Name a way to contact someone",
   "answers": [
    {
-    "text": "Communicate",
-    "aliases": [],
+    "text": "Call",
+    "aliases": [
+     "phone call",
+     "ring"
+    ],
     "points": 38
    },
    {
-    "text": "Call",
-    "aliases": [],
-    "points": 24
-   },
-   {
     "text": "Text",
-    "aliases": [],
-    "points": 16
-   },
-   {
-    "text": "Message",
-    "aliases": [],
-    "points": 10
+    "aliases": [
+     "sms",
+     "texting"
+    ],
+    "points": 24
    },
    {
     "text": "Email",
     "aliases": [],
-    "points": 7
+    "points": 16
    },
    {
     "text": "Video Chat",
+    "aliases": [
+     "video call",
+     "facetime",
+     "zoom"
+    ],
+    "points": 10
+   },
+   {
+    "text": "Message",
+    "aliases": [
+     "dm"
+    ],
+    "points": 7
+   },
+   {
+    "text": "Letter",
     "aliases": [],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name something people send in a communication method",
+  "text": "Name something people send",
   "answers": [
    {
     "text": "Text",
-    "aliases": [],
+    "aliases": [
+     "sms",
+     "texting"
+    ],
     "points": 38
    },
    {
@@ -10074,12 +10522,16 @@
    },
    {
     "text": "Package",
-    "aliases": [],
+    "aliases": [
+     "parcel"
+    ],
     "points": 10
    },
    {
     "text": "Message",
-    "aliases": [],
+    "aliases": [
+     "dm"
+    ],
     "points": 7
    },
    {
@@ -10090,7 +10542,7 @@
   ]
  },
  {
-  "text": "Name something you might say when communication method",
+  "text": "Name a moment people always say something polite",
   "answers": [
    {
     "text": "Answering The Phone",
@@ -10125,7 +10577,7 @@
   ]
  },
  {
-  "text": "Name a game game",
+  "text": "Name a type of game",
   "answers": [
    {
     "text": "Board",
@@ -10160,21 +10612,28 @@
   ]
  },
  {
-  "text": "Name something used in a game",
+  "text": "Name a game for a rainy day",
   "answers": [
    {
     "text": "Board Game",
-    "aliases": [],
+    "aliases": [
+     "monopoly"
+    ],
     "points": 38
    },
    {
     "text": "Card Game",
-    "aliases": [],
+    "aliases": [
+     "cards",
+     "uno"
+    ],
     "points": 24
    },
    {
     "text": "Video Game",
-    "aliases": [],
+    "aliases": [
+     "gaming"
+    ],
     "points": 16
    },
    {
@@ -10184,18 +10643,22 @@
    },
    {
     "text": "Arcade Game",
-    "aliases": [],
+    "aliases": [
+     "arcade"
+    ],
     "points": 7
    },
    {
     "text": "Puzzle",
-    "aliases": [],
+    "aliases": [
+     "jigsaw"
+    ],
     "points": 5
    }
   ]
  },
  {
-  "text": "Name a game game people play with friends",
+  "text": "Name a type of game for game night",
   "answers": [
    {
     "text": "Card",
@@ -10265,7 +10728,7 @@
   ]
  },
  {
-  "text": "Name something commonly color",
+  "text": "Name a color seen on flags",
   "answers": [
    {
     "text": "Red",
@@ -10300,7 +10763,7 @@
   ]
  },
  {
-  "text": "Name a place people go to place",
+  "text": "Name a reason people go out",
   "answers": [
    {
     "text": "Eat",
@@ -10319,12 +10782,17 @@
    },
    {
     "text": "Exercise",
-    "aliases": [],
+    "aliases": [
+     "work out",
+     "workout"
+    ],
     "points": 10
    },
    {
     "text": "Study",
-    "aliases": [],
+    "aliases": [
+     "revise"
+    ],
     "points": 7
    },
    {
@@ -10335,11 +10803,14 @@
   ]
  },
  {
-  "text": "Name a place you might see a place",
+  "text": "Name a common profession",
   "answers": [
    {
     "text": "Doctor",
-    "aliases": [],
+    "aliases": [
+     "physician",
+     "doc"
+    ],
     "points": 38
    },
    {
@@ -10349,17 +10820,26 @@
    },
    {
     "text": "Police Officer",
-    "aliases": [],
+    "aliases": [
+     "cop",
+     "police",
+     "policeman",
+     "policewoman"
+    ],
     "points": 16
    },
    {
     "text": "Chef",
-    "aliases": [],
+    "aliases": [
+     "cook"
+    ],
     "points": 10
    },
    {
     "text": "Athlete",
-    "aliases": [],
+    "aliases": [
+     "sportsman"
+    ],
     "points": 7
    },
    {
@@ -10370,7 +10850,7 @@
   ]
  },
  {
-  "text": "Name something that comes in object",
+  "text": "Name a way things are sold or packaged",
   "answers": [
    {
     "text": "Pairs",
@@ -10405,7 +10885,7 @@
   ]
  },
  {
-  "text": "Name something you can object",
+  "text": "Name something you can do with a cardboard box",
   "answers": [
    {
     "text": "Open",
