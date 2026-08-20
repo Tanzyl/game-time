@@ -23,15 +23,19 @@ function createServer() {
   const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
   const newCode = () => Array.from(crypto.randomBytes(6), (b) => CODE_CHARS[b % CODE_CHARS.length]).join('');
 
-  const pickQuestions = (used) => {
-    const avail = questions.map((_, i) => i).filter((i) => !used.has(i));
+  // Global no-repeat window: a question can't be dealt again (in any room,
+  // match, or rematch) until nearly every other question has been played.
+  const recent = []; // dealt question indices, oldest first
+  const pickQuestions = () => {
+    const inRecent = new Set(recent);
+    const avail = questions.map((_, i) => i).filter((i) => !inRecent.has(i));
     const picked = [];
     for (let k = 0; k < game.ROUNDS; k++) {
-      const idx = avail.splice(Math.floor(Math.random() * avail.length), 1)[0];
-      used.add(idx);
-      picked.push(questions[idx]);
+      picked.push(avail.splice(Math.floor(Math.random() * avail.length), 1)[0]);
     }
-    return picked;
+    recent.push(...picked);
+    recent.splice(0, Math.max(0, recent.length - (questions.length - game.ROUNDS)));
+    return picked.map((i) => questions[i]);
   };
 
   const cleanName = (name, fallback) => {
@@ -109,7 +113,7 @@ function createServer() {
       const token = crypto.randomBytes(16).toString('hex');
       room = {
         code, state: 'lobby', match: null, timer: null, revealed: [],
-        used: new Set(), roundEndsAt: 0,
+        roundEndsAt: 0,
         series: { wins: [0, 0], points: [0, 0], matches: 0 },
         players: [{ token, socketId: socket.id, connected: true, ready: false, guessTimes: [], graceTimer: null, name: cleanName(payload && payload.name, 'Player 1') }],
       };
@@ -165,7 +169,7 @@ function createServer() {
       room.players[playerIdx].ready = true;
       emitRoom(room, 'room_state', roomState(room));
       if (room.players.length === 2 && room.players.every((p) => p.ready)) {
-        room.match = game.createMatch(pickQuestions(room.used));
+        room.match = game.createMatch(pickQuestions());
         startRoundFlow(room);
       }
     });
@@ -191,11 +195,10 @@ function createServer() {
 
     socket.on('rematch', () => {
       if (!room || room.state !== 'over' || playerIdx === -1) return;
-      if (questions.length - room.used.size < game.ROUNDS) room.used.clear();
       room.players[playerIdx].ready = true;
       emitRoom(room, 'room_state', roomState(room));
       if (room.players.length === 2 && room.players.every((p) => p.connected && p.ready)) {
-        room.match = game.createMatch(pickQuestions(room.used));
+        room.match = game.createMatch(pickQuestions());
         startRoundFlow(room);
       }
     });
