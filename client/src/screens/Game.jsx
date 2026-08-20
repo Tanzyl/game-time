@@ -136,7 +136,10 @@ export default function Game({ session, game, onGuess, onRematch, onLeave, roomI
           <button className="accent go" onClick={submit} aria-label="Submit answer">➤</button>
         </div>
       )}
-      <p className="board-label">What do you think others answered?</p>
+      <p className={`board-label ${fresh ? 'feedback' : ''}`}>
+        {fresh ? (game.feedback.result === 'taken' ? '🙅 Already taken!' : '❌ Nope, try again!')
+          : 'What do you think others answered?'}
+      </p>
       <ol className="board">
         {slots.map((r, i) => {
           const missed = game.roundEnd?.unclaimed?.find((u) => u.slot === i);
@@ -149,7 +152,6 @@ export default function Game({ session, game, onGuess, onRematch, onLeave, roomI
           );
         })}
       </ol>
-      {fresh && <p className="feedback">{game.feedback.result === 'taken' ? '🙅 Already taken!' : '❌ Nope, try again!'}</p>}
       {game.phase === 'round_end' && <p className="intermission">🎬 Next round starting…</p>}
     </div>
   );
