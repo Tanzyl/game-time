@@ -2,7 +2,8 @@ import { useState } from 'react';
 import Doodles from '../Doodles';
 
 export default function Lobby({ session, roomInfo, onReady, onLeave }) {
-  const url = `${window.location.origin}/room/${session.code}`;
+  // invite links always point at the game server: itch.io iframe URLs can't route /room/CODE
+  const url = `${import.meta.env.VITE_SERVER_URL || window.location.origin}/room/${session.code}`;
   const me = roomInfo?.players?.[session.playerIdx];
   const players = roomInfo?.players || [];
   const bothHere = players.length === 2;

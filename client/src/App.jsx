@@ -70,7 +70,8 @@ export default function App() {
     } else if (s) join(s.code, s.token);
   }, [join]);
 
-  const leave = () => { sessionStorage.removeItem('gt_session'); window.location.href = '/'; };
+  // BASE_URL is '/' normally, './' on the itch.io build (must stay inside the iframe dir)
+  const leave = () => { sessionStorage.removeItem('gt_session'); window.location.href = import.meta.env.BASE_URL; };
 
   if (screen === 'game' && gameState) {
     return <Game session={session} game={gameState} onGuess={(text) => socket.emit('guess', { text })}

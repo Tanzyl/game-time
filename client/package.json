@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:itch": "vite build --mode itch --outDir dist-itch",
     "lint": "oxlint",
     "preview": "vite preview"
   },

@@ -13,7 +13,9 @@ const GRACE_MS = 15_000;
 function createServer() {
   const app = express();
   const server = http.createServer(app);
-  const io = new Server(server);
+  // open CORS so the itch.io-hosted client (html.itch.zone iframe) can connect;
+  // safe here: server-authoritative game, no auth, room codes + rate limiting
+  const io = new Server(server, { cors: { origin: true } });
 
   const dist = path.join(__dirname, '..', 'client', 'dist');
   app.use(express.static(dist));
