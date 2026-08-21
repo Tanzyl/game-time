@@ -28,6 +28,29 @@ function fuzzyEq(c, g) {
   return maxDist > 0 && levenshtein(c, g) <= maxDist;
 }
 
+const STOP = new Set(['a', 'an', 'the', 'my', 'your', 'their', 'his', 'her', 'its', 'our',
+  'to', 'of', 'on', 'in', 'at', 'for', 'with', 'and', 'or', 'up', 'out', 'it', 'them']);
+const tokens = (s) => s.split(' ').filter((t) => !STOP.has(t));
+
+// single-word comparison, stricter than fuzzyEq: short words must match exactly
+// (plural aside) so "take"/"make" and "rain"/"train" don't typo-collide
+function tokenEq(a, b) {
+  if (a === b || singular(a) === singular(b)) return true;
+  const maxLen = Math.max(a.length, b.length);
+  const tol = maxLen >= 9 ? 2 : maxLen >= 6 ? 1 : 0;
+  return tol > 0 && levenshtein(a, b) <= tol;
+}
+
+// token-subset match: every content word of one side appears in the other,
+// so "coffee" claims "Drink coffee" and "get a coffee" claims "Coffee"
+function tokenMatch(c, g, eq) {
+  const ct = tokens(c), gt = tokens(g);
+  if (!ct.length || !gt.length) return false;
+  const covers = (a, b) => b.every((w) => a.some((v) => eq(v, w)));
+  return covers(ct, gt) || covers(gt, ct);
+}
+const exactEq = (a, b) => a === b || singular(a) === singular(b);
+
 // true iff Levenshtein distance <= 1
 function within1(a, b) {
   if (a === b) return true;
@@ -64,21 +87,32 @@ function submitGuess(match, playerIdx, text) {
   const g = normalize(text);
   if (!g || !match.board) return { result: 'miss' };
   const q = match.questions[match.round];
-  for (let slot = 0; slot < q.answers.length; slot++) {
-    const a = q.answers[slot];
-    const cands = [a.text, ...(a.aliases || [])].map(normalize);
-    const hit = cands.some((c) => fuzzyEq(c, g));
-    if (!hit) continue;
-    if (match.board.claimed[slot] !== null) return { result: 'taken', slot };
-    match.board.claimed[slot] = playerIdx;
-    const points = a.points * (match.round + 1);
-    match.scores[playerIdx] += points;
-    return {
-      result: 'claimed', slot, text: a.text, points,
-      boardComplete: match.board.claimed.every((c) => c !== null),
-    };
+  // strictest pass that hits wins, so "baseball" never claims "Basketball" in an
+  // earlier slot. A pass matching 2+ answers (e.g. "ice" with both Ice skating and
+  // Ice hockey on the board) is a miss: never award an answer the player didn't mean.
+  const passes = [
+    (c) => exactEq(c, g),
+    (c) => tokenMatch(c, g, exactEq),
+    (c) => fuzzyEq(c, g) || tokenMatch(c, g, tokenEq),
+  ];
+  let slot = -1;
+  for (const pass of passes) {
+    const slots = q.answers
+      .map((a, i) => ([a.text, ...(a.aliases || [])].map(normalize).some(pass) ? i : -1))
+      .filter((i) => i !== -1);
+    if (slots.length > 1) return { result: 'miss' };
+    if (slots.length === 1) { slot = slots[0]; break; }
   }
-  return { result: 'miss' };
+  if (slot === -1) return { result: 'miss' };
+  if (match.board.claimed[slot] !== null) return { result: 'taken', slot };
+  const a = q.answers[slot];
+  match.board.claimed[slot] = playerIdx;
+  const points = a.points * (match.round + 1);
+  match.scores[playerIdx] += points;
+  return {
+    result: 'claimed', slot, text: a.text, points,
+    boardComplete: match.board.claimed.every((c) => c !== null),
+  };
 }
 
 function endRound(match) {

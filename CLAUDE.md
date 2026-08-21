@@ -34,8 +34,8 @@ Two-player realtime "Guess Their Answer" (Family Feud–style). One Node process
 Three layers, strictly separated:
 
 - `server/game.js` — pure rules, zero socket imports, fully unit-tested. Match state machine (3 rounds, x1/x2/x3 multipliers), guess matching (normalize → strip leading articles → plural/singular → Levenshtein ≤1 for 4–6 chars, ≤2 for 7+), claim-once board semantics.
-- `server/index.js` — Express static serving + SPA fallback (`/room/:code`) + Socket.IO wiring. Owns the room `Map` (6-char codes), timers, reconnect tokens (15s grace then forfeit), rate limiting (3 guesses/sec, 60-char cap), and cross-rematch series stats (`room.series`: wins/points/matches, sent in `match_end`).
-- `client/src/` — React (Vite). `App.jsx` is the single state machine keyed off socket events; screens (`screens/Home|Lobby|Game.jsx`) are presentational. The socket protocol event names live in the Interfaces block of `docs/superpowers/plans/2026-08-19-guess-their-answer.md`.
+- `server/index.js` — Express static serving + SPA fallback (`/room/:code`) + Socket.IO wiring. Owns the room `Map` (6-char codes), timers, reconnect tokens (15s grace then forfeit), rate limiting (3 guesses/sec, 60-char cap), cross-rematch series stats (`room.series`: wins/points/matches, sent in `match_end`), and a process-global no-repeat window for question selection (`recent` in `pickQuestions` — a question isn't dealt again in any room until nearly the whole pool has been used).
+- `client/src/` — React (Vite). `App.jsx` is the single state machine keyed off socket events; screens (`screens/Home|Lobby|Game.jsx`) are presentational. The socket protocol event names live in the Interfaces block of `docs/superpowers/plans/2026-08-19-guess-their-answer.md`. Root-level `UI-Ux.png` is the visual design reference the client theme was built from; layouts are viewport-locked (no page scroll on any screen).
 
 **Session storage split (deliberate):** `gt_name` lives in `localStorage` (shared default across tabs), but `gt_session` (room code + reconnect token) lives in `sessionStorage` — per-tab, so opening a room link in a second tab of the same browser doesn't steal the first tab's seat and destroy the room. Don't "simplify" this back to localStorage.
 
@@ -43,9 +43,9 @@ Three layers, strictly separated:
 
 ## Question dataset
 
-`server/questions.json` — 233 questions, each exactly 6 answers, integer points summing to exactly 100, non-increasing order, unique question texts. `server/questions.test.js` enforces all of this; run it after any dataset edit. Answer `aliases` arrays are optional extra synonyms — spelling variants are unnecessary (fuzzy matching covers them), but genuinely different words belong there.
+`server/questions.json` — 500 questions, each exactly 6 answers, integer points summing to exactly 100, non-increasing order, unique question texts. `server/questions.test.js` enforces all of this; run it after any dataset edit. Answer `aliases` arrays are optional extra synonyms — spelling variants are unnecessary (fuzzy matching covers them), but genuinely different words belong there.
 
-Root-level `guess_their_answer_500_question_dataset.csv` is the raw source pool questions were imported from — edit `questions.json`, not the CSV.
+Root-level `guess_their_answer_500_question_dataset.csv` is the raw source pool questions were imported from — edit `questions.json`, not the CSV. The CSV is exhausted: its 500 rows contain only 84 distinct answer sets (each repeated with reworded text) and all usable ones are imported; new questions must be authored, not mined from it.
 
 ## Docs
 

@@ -63,6 +63,28 @@ test('alias and typo matching', () => {
   assert.equal(submitGuess(m, 0, 'pee').result, 'claimed');
 });
 
+test('a key word of a multi-word answer claims it', () => {
+  const m = createMatch(QS);
+  startRound(m);
+  assert.equal(submitGuess(m, 0, 'teeth').result, 'claimed');        // word of "Brush teeth"
+  assert.equal(submitGuess(m, 0, 'get a coffee').result, 'claimed'); // extra words around "Coffee"
+});
+
+test('exact match beats fuzzy; ambiguous one-word guesses miss', () => {
+  const m = createMatch([q('Qx', [
+    { text: 'Basketball', aliases: [], points: 30 },
+    { text: 'Baseball', aliases: [], points: 24 },
+    { text: 'Ice skating', aliases: [], points: 18 },
+    { text: 'Ice hockey', aliases: [], points: 12 },
+    { text: 'Golf', aliases: [], points: 9 },
+    { text: 'Tennis', aliases: [], points: 7 },
+  ])]);
+  startRound(m);
+  assert.equal(submitGuess(m, 0, 'baseball').slot, 1);    // not the fuzzier Basketball in slot 0
+  assert.equal(submitGuess(m, 0, 'ice').result, 'miss');  // fits two answers: be specific
+  assert.equal(submitGuess(m, 0, 'skating').result, 'claimed');
+});
+
 test('claimed answers cannot be re-claimed', () => {
   const m = createMatch(QS);
   startRound(m);
