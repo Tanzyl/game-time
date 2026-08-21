@@ -246,5 +246,9 @@ if (require.main === module) {
         }
       }
     }
+    // packaged .exe double-click: open the game in the default browser
+    if (process.pkg && process.platform === 'win32' && !process.env.PORT) {
+      require('child_process').exec(`start http://localhost:${port}`);
+    }
   });
 }

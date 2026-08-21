@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev:server": "node server/index.js",
+    "build:exe": "npm run build && npx @yao-pkg/pkg server/index.js --config package.json --targets node22-win-x64 --output GuessTheirAnswer.exe",
     "tunnel": "node server/tunnel.js",
     "build": "cd client && npm run build",
     "test": "node --test"
@@ -11,6 +12,12 @@
   "dependencies": {
     "express": "^4.19.0",
     "socket.io": "^4.7.0"
+  },
+  "pkg": {
+    "assets": [
+      "client/dist/**/*",
+      "server/questions.json"
+    ]
   },
   "devDependencies": {
     "localtunnel": "^2.0.2",
